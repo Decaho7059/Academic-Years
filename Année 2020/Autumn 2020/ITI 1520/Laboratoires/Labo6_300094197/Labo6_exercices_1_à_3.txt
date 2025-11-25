@@ -1,0 +1,86 @@
+>>> Labo_6
+>>>
+>>> #Exercice 1
+>>> s='bonjour'
+>>> type(s)
+<class 'str'>
+>>> n='abc'+'def'
+>>> m='zut !'*4
+>>> print(n,m)
+abcdef zut !zut !zut !zut !
+>>> 'a' in 'abba'
+True
+>>> s="""aa
+bb
+cc
+"""
+>>> s
+'aa\nbb\ncc\n'
+>>> s1='bon'
+>>> s2='mauvais'
+>>> s3='fou'
+>>> 'ou' in s3
+True
+>>> '' not in s1
+False
+>>> ' ' not in s1
+True
+>>> s1+s2+s3
+'bonmauvaisfou'
+>>> ' ' in s1+s2+s3
+False
+>>> s3*10
+'foufoufoufoufoufoufoufoufoufou'
+>>> len(s1+s2+s3)
+13
+>>> nom = 'Cedric'
+>>> print(nom[1], nom[3], nom[5])
+e r c
+>>> print(nom[-1], nom[-2], nom[-4], nom[-6])
+c i d C
+>>> print(len(nom))
+6
+>>> ch='Juliette'
+>>> print(ch[0:3])
+Jul
+>>> print(ch[:3])
+Jul
+>>> print(ch[3:])
+iette
+>>>
+>>> #Exercice 2
+>>> aha='abcdefgh'
+>>> aha[:4]
+'abcd'
+>>> aha[3:6]
+'def'
+>>> aha[-1]
+'h'
+>>> aha[-2:-4]
+''
+>>> aha[5:7]
+'fg'
+>>> aha[3:]
+'defgh'
+>>> aha[5:]
+'fgh'
+>>> aha[0:7:3]
+'adg'
+>>> aha[1:4:2]
+'bd'
+>>>
+>>> #Exercice 3
+>>> s = '''  En 1815, M. Charles-François-Bienvenu Myrielétait évêque de Digne. C’était un vieillard d’environ soixante-quinze ans ; il occupait lesiège de Digne depuis 1806.  ...    '''
+>>> nS=nS.replace('.',' ')
+>>> nS=nS.replace(',',' ')
+>>> nS=nS.replace(';',' ')
+>>> nS=nS.replace('\n',' ')
+>>> nS=nS.strip()
+>>> nS.lower()
+'en 1815  m  charles-françois-bienvenu myrielétait évêque de digne  c’était un vieillard d’environ soixante-quinze ans   il occupait lesiège de digne depuis 1806'
+>>> nS.count('de')
+3
+>>> nS=nS.replace('était','est')
+>>> print(nS)
+En 1815  M  Charles-François-Bienvenu Myrielest évêque de Digne  C’est un vieillard d’environ soixante-quinze ans   il occupait lesiège de Digne depuis 1806
+>>> 
