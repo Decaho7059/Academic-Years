@@ -1,0 +1,20 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1116,5): warning MSB8027: Deux ou plusieurs fichiers avec le nom Start12.c généreront des sorties vers le même emplacement. Cela peut entraîner une génération incorrecte. Les fichiers impliqués sont ..\..\Lab4Student\Lab4Test\Lab4Test\Sources\Start12.c, ..\..\Lab4Student\Lab4\Lab4\Sources\Start12.c.
+  main.c
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CEG 3536\Laboratoires\Lab 4\Lab4Student\Lab4Test\Lab4Test\Sources\main.c(5,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'mc9s12dg256.h' : No such file or directory
+  Start12.c
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CEG 3536\Laboratoires\Lab 4\Lab4Student\Lab4Test\Lab4Test\Sources\Start12.c(24,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'hidef.h' : No such file or directory
+  alarm.c
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CEG 3536\Laboratoires\Lab 4\Lab4Student\Lab4\Lab4\Sources\alarm.h(7,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'mc9s12dg256.h' : No such file or directory
+  armed.c
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CEG 3536\Laboratoires\Lab 4\Lab4Student\Lab4\Lab4\Sources\alarm.h(7,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'mc9s12dg256.h' : No such file or directory
+  config.c
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CEG 3536\Laboratoires\Lab 4\Lab4Student\Lab4\Lab4\Sources\alarm.h(7,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'mc9s12dg256.h' : No such file or directory
+  delay.c
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CEG 3536\Laboratoires\Lab 4\Lab4Student\Lab4\Lab4\Sources\delay.c(7,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'mc9s12dg256.h' : No such file or directory
+  lcdDisp.c
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CEG 3536\Laboratoires\Lab 4\Lab4Student\Lab4\Lab4\Sources\lcdDisp.c(9,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'mc9s12dg256.h' : No such file or directory
+  Start12.c
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CEG 3536\Laboratoires\Lab 4\Lab4Student\Lab4\Lab4\Sources\Start12.c(24,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'hidef.h' : No such file or directory
+  switches.c
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CEG 3536\Laboratoires\Lab 4\Lab4Student\Lab4\Lab4\Sources\switches.h(7,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'mc9s12dg256.h' : No such file or directory
+  Génération de code en cours...
