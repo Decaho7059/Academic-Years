@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers sources\Lab4">
+      <UniqueIdentifier>{8a940bae-6cc2-4008-9eef-9406f537cddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Lab4">
+      <UniqueIdentifier>{069d78e9-ba96-4051-92a0-0a0a6e36edec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Lab4Student\Lab4\Lab4\Sources\alarm.c">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab4Student\Lab4\Lab4\Sources\armed.c">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab4Student\Lab4\Lab4\Sources\config.c">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab4Student\Lab4\Lab4\Sources\delay.c">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab4Student\Lab4\Lab4\Sources\lcdDisp.c">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab4Student\Lab4\Lab4\Sources\Start12.c">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab4Student\Lab4\Lab4\Sources\switches.c">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab4Student\Lab4Test\Lab4Test\Sources\main.c">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab4Student\Lab4Test\Lab4Test\Sources\Start12.c">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\alarm.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\alarmExtern.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\armed.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\config.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\delay.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\keyPad.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\lcd_asm.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\lcdDisp.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\main_asm.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\SegDisp.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\siren.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\Lab4\Sources\switches.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4Test\Lab4Test\Sources\main_asm.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\siren.h">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\delay.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\lcdDisp.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\Lab4\SegDisp.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4Student\mc9s12dg256.h">
+      <Filter>Fichiers d%27en-tête\Lab4</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Lab4Student\Lab4\Lab4\Sources\lcd.asm">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </None>
+    <None Include="..\..\Lab4Student\Lab4\Lab4\Sources\main.asm">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </None>
+    <None Include="..\..\Lab4Student\Lab4Test\Lab4Test\Sources\main.asm">
+      <Filter>Fichiers sources\Lab4</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+﻿  monfichier1.cpp
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CSI 2772\Devoirs\Devoir 0\Devoir0_codes\Devoir1\Devoir1\monfichier1.cpp(6,1): error C2760: erreur de syntaxe : 'int' était inattendu ici; ';' attendu
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CSI 2772\Devoirs\Devoir 0\Devoir0_codes\Devoir1\Devoir1\monfichier1.cpp(6,12): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CSI 2772\Devoirs\Devoir 0\Devoir0_codes\Devoir1\Devoir1\monfichier1.cpp(8,2): error C2065: 'nombre' : identificateur non déclaré
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CSI 2772\Devoirs\Devoir 0\Devoir0_codes\Devoir1\Devoir1\monfichier1.cpp(8,11): error C2065: 'cin' : identificateur non déclaré
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CSI 2772\Devoirs\Devoir 0\Devoir0_codes\Devoir1\Devoir1\monfichier1.cpp(10,2): error C2065: 'cout' : identificateur non déclaré
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CSI 2772\Devoirs\Devoir 0\Devoir0_codes\Devoir1\Devoir1\monfichier1.cpp(10,35): error C2065: 'nombre' : identificateur non déclaré
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CSI 2772\Devoirs\Devoir 0\Devoir0_codes\Devoir1\Devoir1\monfichier1.cpp(11,2): error C2065: 'cout' : identificateur non déclaré
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CSI 2772\Devoirs\Devoir 0\Devoir0_codes\Devoir1\Devoir1\monfichier1.cpp(11,10): error C2065: 'nombre' : identificateur non déclaré
+C:\Users\Decaho\Documents\UOTTAWA ST PAUL\Automne 2023\CSI 2772\Devoirs\Devoir 0\Devoir0_codes\Devoir1\Devoir1\monfichier1.cpp(11,17): error C2059: erreur de syntaxe : 'sizeof'
