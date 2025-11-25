@@ -1,0 +1,63 @@
+
+interface RectangleInterfaece {
+	public boolean contains(Point p);
+	public boolean contains2(Point p);
+}
+
+
+! -> && -> ||
+
+
+abstract class Rectangle implements RectangleInterfaece {
+
+	public boolean contains(Point p) {
+		// p = x10
+		// p = (1, 5)
+		// p = x11
+		// p.x = 1
+		p.y = 2
+		return (p.x == this.x || p.x == this.x+d) && (p.y == this.y || p.y == this.y+c);
+	}
+
+	public boolean contains(Point p) {
+		return (p.x >= this.x || p.x <= this.x+d) && (p.y >= this.y || p.y <= this.y+c);
+	}
+
+	public abstract boolean contains2(Point p);
+
+}
+
+class Re extends Rectangle {
+	public boolean contains2(Point p) {return false;}
+}
+
+main(){
+	po = x10
+	r 
+	r.contains(po)
+	print(po.x) // '2' ou 1
+}
+
+x11 {
+	point 
+	x = 1
+	y = 5
+}
+
+x10 {
+	point 
+	x = 2
+	y = 2
+}
+
+superclass: extends, isA, 0..1
+interface: implements, 0..infini
+
+
+Rectangle r; // correct
+r = new Recrangle(); // error
+r = new RectangleInterfaece(); // error
+
+
+contexte static Point2.
+contexte non-static Point2 p = new Point2(); p.
