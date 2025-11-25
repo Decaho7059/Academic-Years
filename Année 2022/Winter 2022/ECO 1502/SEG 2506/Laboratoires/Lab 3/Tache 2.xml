@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <place id="P0">
+            <graphics>
+                <position x="279.0" y="128.0"/>
+            </graphics>
+            <name>
+                <value>Waiter free</value>
+                <graphics>
+                    <offset x="-4.0" y="-23.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>D</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <initialMarking>
+                <value>1.0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0.0</value>
+            </capacity>
+        </place>
+        <place id="P1">
+            <graphics>
+                <position x="100.0" y="131.0"/>
+            </graphics>
+            <name>
+                <value>Customer 1</value>
+                <graphics>
+                    <offset x="-3.0" y="-24.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>D</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <initialMarking>
+                <value>1.0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0.0</value>
+            </capacity>
+        </place>
+        <place id="P2">
+            <graphics>
+                <position x="427.0" y="136.0"/>
+            </graphics>
+            <name>
+                <value>Customer 2</value>
+                <graphics>
+                    <offset x="-12.0" y="-24.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>D</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <initialMarking>
+                <value>1.0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0.0</value>
+            </capacity>
+        </place>
+        <place id="P3">
+            <graphics>
+                <position x="139.0" y="341.0"/>
+            </graphics>
+            <name>
+                <value>wait</value>
+                <graphics>
+                    <offset x="-15.0" y="15.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>D</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <initialMarking>
+                <value>0.0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0.0</value>
+            </capacity>
+        </place>
+        <place id="P4">
+            <graphics>
+                <position x="275.0" y="340.0"/>
+            </graphics>
+            <name>
+                <value>Order taken</value>
+                <graphics>
+                    <offset x="-8.0" y="-41.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>D</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <initialMarking>
+                <value>0.0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0.0</value>
+            </capacity>
+        </place>
+        <place id="P5">
+            <graphics>
+                <position x="408.0" y="346.0"/>
+            </graphics>
+            <name>
+                <value>wait</value>
+                <graphics>
+                    <offset x="-15.0" y="15.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>D</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <initialMarking>
+                <value>0.0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0.0</value>
+            </capacity>
+        </place>
+        <place id="P6">
+            <graphics>
+                <position x="40.0" y="457.0"/>
+            </graphics>
+            <name>
+                <value>eating</value>
+                <graphics>
+                    <offset x="-2.0" y="23.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>D</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <initialMarking>
+                <value>0.0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0.0</value>
+            </capacity>
+        </place>
+        <place id="P7">
+            <graphics>
+                <position x="515.0" y="449.0"/>
+            </graphics>
+            <name>
+                <value>eating</value>
+                <graphics>
+                    <offset x="-15.0" y="19.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>D</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <initialMarking>
+                <value>0.0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0.0</value>
+            </capacity>
+        </place>
+        <place id="P8">
+            <graphics>
+                <position x="200.0" y="485.0"/>
+            </graphics>
+            <name>
+                <value>Wait</value>
+                <graphics>
+                    <offset x="-18.0" y="20.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>D</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <initialMarking>
+                <value>0.0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0.0</value>
+            </capacity>
+        </place>
+        <transition id="T0">
+            <graphics>
+                <position x="190.0" y="232.0"/>
+            </graphics>
+            <name>
+                <value>Take order</value>
+                <graphics>
+                    <offset x="-42.0" y="16.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>C</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <angle>
+                <value>0</value>
+            </angle>
+            <firingDelay>
+                <value>-1.0</value>
+                <graphics/>
+            </firingDelay>
+            <firingFunction>
+                <value>1.0</value>
+                <graphics/>
+            </firingFunction>
+        </transition>
+        <transition id="T1">
+            <graphics>
+                <position x="375.0" y="226.0"/>
+            </graphics>
+            <name>
+                <value>Take order</value>
+                <graphics>
+                    <offset x="27.0" y="18.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>C</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <angle>
+                <value>0</value>
+            </angle>
+            <firingDelay>
+                <value>-1.0</value>
+                <graphics/>
+            </firingDelay>
+            <firingFunction>
+                <value>1.0</value>
+                <graphics/>
+            </firingFunction>
+        </transition>
+        <transition id="T2">
+            <graphics>
+                <position x="150.0" y="449.0"/>
+            </graphics>
+            <name>
+                <value>Serve food</value>
+                <graphics>
+                    <offset x="-10.0" y="25.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>C</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <angle>
+                <value>0</value>
+            </angle>
+            <firingDelay>
+                <value>-1.0</value>
+                <graphics/>
+            </firingDelay>
+            <firingFunction>
+                <value>1.0</value>
+                <graphics/>
+            </firingFunction>
+        </transition>
+        <transition id="T3">
+            <graphics>
+                <position x="291.0" y="452.0"/>
+            </graphics>
+            <name>
+                <value>Tell kitchen</value>
+                <graphics>
+                    <offset x="-5.0" y="22.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>C</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <angle>
+                <value>0</value>
+            </angle>
+            <firingDelay>
+                <value>-1.0</value>
+                <graphics/>
+            </firingDelay>
+            <firingFunction>
+                <value>1.0</value>
+                <graphics/>
+            </firingFunction>
+        </transition>
+        <transition id="T4">
+            <graphics>
+                <position x="420.0" y="447.0"/>
+            </graphics>
+            <name>
+                <value>Serve food</value>
+                <graphics>
+                    <offset x="-3.0" y="20.0"/>
+                </graphics>
+            </name>
+            <place-transitiontype>
+                <value>C</value>
+            </place-transitiontype>
+            <showLabel>
+                <position1>1</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <scale>
+                <value>1.0</value>
+            </scale>
+            <angle>
+                <value>0</value>
+            </angle>
+            <firingDelay>
+                <value>-1.0</value>
+                <graphics/>
+            </firingDelay>
+            <firingFunction>
+                <value>1.0</value>
+                <graphics/>
+            </firingFunction>
+        </transition>
+        <arc id="P0 to T0" source="P0" target="T0">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="279" y="149" curvePoint="false"/>
+            <arcpath id="001" x="196" y="238" curvePoint="false"/>
+        </arc>
+        <arc id="P0 to T1" source="P0" target="T1">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="299" y="150" curvePoint="false"/>
+            <arcpath id="001" x="371" y="232" curvePoint="false"/>
+        </arc>
+        <arc id="P0 to T2" source="P0" target="T2">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="276" y="145" curvePoint="false"/>
+            <arcpath id="001" x="30" y="258" curvePoint="false"/>
+            <arcpath id="002" x="146" y="455" curvePoint="false"/>
+        </arc>
+        <arc id="P0 to T4" source="P0" target="T4">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="303" y="146" curvePoint="false"/>
+            <arcpath id="001" x="546" y="286" curvePoint="false"/>
+            <arcpath id="002" x="426" y="453" curvePoint="false"/>
+        </arc>
+        <arc id="P1 to T0" source="P1" target="T0">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="119" y="154" curvePoint="false"/>
+            <arcpath id="001" x="185" y="243" curvePoint="false"/>
+        </arc>
+        <arc id="P2 to T1" source="P2" target="T1">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="429" y="159" curvePoint="false"/>
+            <arcpath id="001" x="380" y="237" curvePoint="false"/>
+        </arc>
+        <arc id="P3 to T2" source="P3" target="T2">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="150" y="366" curvePoint="false"/>
+            <arcpath id="001" x="151" y="445" curvePoint="false"/>
+        </arc>
+        <arc id="P4 to T3" source="P4" target="T3">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="287" y="365" curvePoint="false"/>
+            <arcpath id="001" x="292" y="448" curvePoint="false"/>
+        </arc>
+        <arc id="P5 to T4" source="P5" target="T4">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="419" y="371" curvePoint="false"/>
+            <arcpath id="001" x="421" y="443" curvePoint="false"/>
+        </arc>
+        <arc id="P8 to T2" source="P8" target="T2">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="198" y="487" curvePoint="false"/>
+            <arcpath id="001" x="155" y="460" curvePoint="false"/>
+        </arc>
+        <arc id="T0 to P3" source="T0" target="P3">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="191" y="258" curvePoint="false"/>
+            <arcpath id="001" x="156" y="338" curvePoint="false"/>
+        </arc>
+        <arc id="T0 to P4" source="T0" target="P4">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="195" y="248" curvePoint="false"/>
+            <arcpath id="001" x="276" y="339" curvePoint="false"/>
+        </arc>
+        <arc id="T1 to P4" source="T1" target="P4">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="370" y="242" curvePoint="false"/>
+            <arcpath id="001" x="295" y="339" curvePoint="false"/>
+        </arc>
+        <arc id="T1 to P5" source="T1" target="P5">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="376" y="252" curvePoint="false"/>
+            <arcpath id="001" x="413" y="343" curvePoint="false"/>
+        </arc>
+        <arc id="T2 to P0" source="T2" target="P0">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="151" y="445" curvePoint="false"/>
+            <arcpath id="001" x="283" y="152" curvePoint="false"/>
+        </arc>
+        <arc id="T2 to P6" source="T2" target="P6">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="145" y="465" curvePoint="false"/>
+            <arcpath id="001" x="65" y="467" curvePoint="false"/>
+        </arc>
+        <arc id="T3 to P8" source="T3" target="P8">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="286" y="463" curvePoint="false"/>
+            <arcpath id="001" x="224" y="490" curvePoint="false"/>
+        </arc>
+        <arc id="T4 to P0" source="T4" target="P0">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="421" y="443" curvePoint="false"/>
+            <arcpath id="001" x="295" y="152" curvePoint="false"/>
+        </arc>
+        <arc id="T4 to P7" source="T4" target="P7">
+            <arctype>
+                <value>N</value>
+            </arctype>
+            <showLabel>
+                <position1>0</position1>
+                <position2>0</position2>
+                <position3>0</position3>
+            </showLabel>
+            <graphics/>
+            <inscription>
+                <value>1.0</value>
+                <graphics/>
+            </inscription>
+            <arcpath id="000" x="425" y="463" curvePoint="false"/>
+            <arcpath id="001" x="511" y="460" curvePoint="false"/>
+        </arc>
+    </net>
+</pnml>
