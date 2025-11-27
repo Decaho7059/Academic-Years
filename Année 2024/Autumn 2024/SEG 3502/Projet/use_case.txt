@@ -1,0 +1,73 @@
+Dans ce document, nous avons fourni une vue d’ensemble des concepts du domaine, les hypothèses et les décisions de conception prises pour assurer la robustesse, la flexibilité et la sécurité du système. Les diagrammes UML ont permis de clarifier les relations entre les entités principales, tandis que les réalisations des cas d'utilisation ont illustré les interactions concrètes entre les acteurs et le système, reflétant fidèlement le modèle de domaine implémenté.
+
+En complément, nous avons intégré et testé des contrats BDD à l'aide de Cucumber pour garantir que chaque fonctionnalité réponde aux scénarios d'utilisation attendus. Ces tests permettent de valider le bon fonctionnement du système et d'assurer une meilleure qualité du code. L’implémentation du code dans une branche dédiée du repository GitHub assure également la continuité du projet, facilitant ainsi les futures évolutions et évaluations.
+
+Ce livrable marque une étape clé dans le développement du TCS-TMS, posant les bases pour l’expansion du projet et fournissant une architecture fiable pour une gestion efficace des équipes académiques.
+
+
+####################################################################
+Use Case: Créer une Équipe
+Acteur: Étudiant
+Précondition: L'étudiant est inscrit à un cours pour lequel la création d'équipe a été activée par l'instructeur.
+Étapes:
+L'étudiant sélectionne l'option "Créer une équipe".
+Le système demande à l'étudiant de fournir les informations sur l'équipe, telles que le nom de l'équipe.
+L'étudiant soumet les informations.
+Le système valide et crée l'équipe, ajoute l'étudiant comme membre et liaison de l'équipe.
+Postcondition: Une nouvelle équipe est ajoutée avec l'étudiant en tant que membre et liaison.
+
+Use Case: Joindre une Équipe
+Acteur: Étudiant
+Précondition: L'étudiant est inscrit au cours et n'est membre d'aucune équipe pour ce cours.
+Étapes:
+L'étudiant sélectionne l'option "Joindre une équipe".
+Le système affiche la liste des équipes incomplètes disponibles pour le cours.
+L'étudiant sélectionne une équipe à rejoindre.
+Le système ajoute l'étudiant à la liste des candidats pour cette équipe et met son statut en attente.
+Postcondition: L'étudiant est ajouté à la liste d'attente pour l'équipe sélectionnée
+
+Use Case: Accepter un Étudiant dans l'Équipe
+Acteur: Liaison de l'équipe
+Précondition: L'équipe a des candidats en attente et la liaison est connectée.
+Étapes:
+La liaison consulte la liste des demandes pour rejoindre l'équipe.
+Le système affiche la liste des étudiants en attente pour rejoindre l'équipe.
+La liaison sélectionne les étudiants à accepter dans l'équipe.
+Le système ajoute les étudiants sélectionnés à l'équipe et met à jour le statut de l'équipe.
+Le système envoie des notifications aux étudiants acceptés.
+Postcondition: Les étudiants sont ajoutés à l'équipe et les notifications sont envoyées.
+Use Case: Quitter une Équipe
+Acteur: Étudiant
+Précondition: L'étudiant est membre d'une équipe.
+Étapes:
+L'étudiant sélectionne l'option "Quitter l'équipe".
+Le système affiche les informations de l'équipe et confirme la demande de quitter.
+L'étudiant confirme sa décision de quitter l'équipe.
+Le système retire l'étudiant de l'équipe et met à jour le statut de l'équipe.
+Postcondition: L'étudiant est retiré de l'équipe, et le statut de l'équipe est mis à jour.
+
+Use Case: Visualiser les Équipes
+Acteur: Instructeur
+Précondition: L'instructeur est connecté et la création d'équipe est activée pour le cours.
+Étapes:
+L'instructeur sélectionne l'option "Visualiser les équipes".
+Le système affiche la liste des équipes créées pour le cours, avec le statut de chaque équipe (complète ou incomplète) et les informations des membres.
+Postcondition: L'instructeur visualise les équipes et leurs détails pour le cours.
+
+Use Case: Mettre à Jour les Paramètres de l'Équipe
+Acteur: Instructeur
+Précondition: L'instructeur est connecté et a activé la création d'équipe pour le cours.
+Étapes:
+L'instructeur sélectionne l'option "Mettre à jour les paramètres de l'équipe".
+Le système demande les nouveaux paramètres (nombre minimum et maximum de membres, date limite).
+L'instructeur soumet les paramètres mis à jour.
+Le système valide et applique les nouveaux paramètres à toutes les équipes existantes et futures du cours.
+Postcondition: Les paramètres des équipes pour le cours sont mis à jour.
+
+Use Case: Notifier un Étudiant d'une Modification de Statut
+Acteur: Système (exécution interne)
+Précondition: Une action (comme l'ajout ou la suppression d'un étudiant) nécessite une notification.
+Étapes:
+Le système détecte une action qui nécessite une notification.
+Le système envoie un email à l'étudiant concerné pour l'informer de la mise à jour (ex., ajout dans une équipe ou retrait).
+Postcondition: L'étudiant est informé de la modification de son statut dans l'équipe.

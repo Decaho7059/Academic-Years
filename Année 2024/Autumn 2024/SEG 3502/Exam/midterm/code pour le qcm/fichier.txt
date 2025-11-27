@@ -1,0 +1,513 @@
+1. Qu'est-ce que le génie logiciel ?
+   1) La création de systèmes à petite échelle.
+   2) La résolution de problèmes clients en équipes, avec des systèmes de haute qualité et respectant des contraintes.
+   3) L'évaluation des logiciels avant la mise en production.
+   4) Le test des logiciels créés par d'autres équipes.
+   **Réponse : 2**
+
+2. Quelle est une conséquence potentielle d'une conception inadéquate ?
+   1) Une exécution plus rapide des logiciels.
+   2) Une meilleure satisfaction client.
+   3) Une augmentation des risques et des coûts.
+   4) Un cycle de développement plus court.
+   **Réponse : 3**
+
+3. Selon la définition IEEE, la conception logicielle inclut :
+   1) La documentation utilisateur.
+   2) La définition de l'architecture, des composants et interfaces du système.
+   3) La maintenance des systèmes après leur création.
+   4) L'optimisation des performances après la mise en service.
+   **Réponse : 2**
+
+4. Quel est l'avantage principal de la conception ?
+   1) Permet de réduire les exigences.
+   2) Simplifie le développement en fournissant des représentations abstraites.
+   3) Diminue le besoin de tests finaux.
+   4) Accélère la maintenance des systèmes existants.
+   **Réponse : 2**
+
+5. Pourquoi modéliser dans le génie logiciel ?
+   1) Pour capturer des idées et faciliter la validation.
+   2) Pour éviter les discussions d'équipe.
+   3) Pour éliminer les phases de tests.
+   4) Pour augmenter la complexité de la solution.
+   **Réponse : 1**
+
+6. Quel type de vue est incluse dans la conception architecturale ?
+   1) Vue des utilisateurs.
+   2) Vue de modules, de concurrence et de déploiement.
+   3) Vue des prix de développement.
+   4) Vue des utilisateurs finaux.
+   **Réponse : 2**
+
+7. Quelle est une caractéristique de la 'Clean Architecture' ?
+   1) Basée uniquement sur la performance.
+   2) Structure modulaire permettant l'évolution et des entités indépendantes.
+   3) Se concentre uniquement sur la réduction des coûts.
+   4) Implémentation rigide des règles métier.
+   **Réponse : 2**
+
+8. Quelle est la principale limitation de 'Big Design Up Front' (BDUF) ?
+   1) Les problèmes apparaissent après la mise en œuvre.
+   2) Trop de documentation est produite.
+   3) Il n'est pas applicable aux grands projets.
+   4) Il réduit les phases de conception.
+   **Réponse : 2**
+
+9. Quelle est la dette technique dans le contexte du génie logiciel ?
+   1) Un coût lié à l'implémentation anticipée des exigences.
+   2) Une refactorisation à faire en raison d'une conception limitée initiale.
+   3) Une documentation manquante.
+   4) Un coût anticipé de tests.
+   **Réponse : 2**
+
+10. Quel est l'objectif des diagrammes de contexte dans la conception ?
+    1) Montrer l'interface utilisateur.
+    2) Présenter le système dans son environnement.
+    3) Dresser une liste des composants matériels.
+    4) Décrire les choix technologiques du projet.
+    **Réponse : 2**
+
+11. Qu'est-ce que le domaine dans le cadre de la conception dirigée par le domaine ?
+    1) Un espace de solution uniquement.
+    2) Un espace problème pour lequel une solution est créée.
+    3) Un modèle d'organisation commerciale.
+    4) Une base de données de l'application.
+    **Réponse : 2**
+
+12. Pourquoi est-il important que le domaine soit reflété dans le code ?
+    1) Pour faciliter le déploiement.
+    2) Pour améliorer l'apparence de l'interface utilisateur.
+    3) Pour simplifier la maintenance et l'évolution.
+    4) Pour augmenter les exigences de stockage.
+    **Réponse : 3**
+
+13. Le Domain-Driven Design (DDD) se concentre principalement sur :
+    1) L'interface utilisateur.
+    2) La gestion de la base de données.
+    3) L'alignement du code avec le domaine du problème.
+    4) La documentation du produit.
+    **Réponse : 3**
+
+14. Qu'est-ce que le langage omniprésent (Ubiquitous Language) ?
+    1) Un langage de programmation spécifique.
+    2) Un ensemble de termes et structures partagés pour la compréhension commune du domaine.
+    3) Un jargon technique utilisé par les développeurs.
+    4) Un modèle de données pour le domaine.
+    **Réponse : 2**
+
+15. Qu'est-ce qu'un sous-domaine ?
+    1) Une petite base de données dédiée aux utilisateurs.
+    2) Une partie de la fonctionnalité du système classée par importance.
+    3) Un type de design d'interface utilisateur.
+    4) Un modèle de solution générique pour les projets.
+    **Réponse : 2**
+
+16. Quel est le but de la conception stratégique dans le DDD ?
+    1) Déterminer les partitions du domaine en sous-domaines.
+    2) Concevoir des animations pour l'interface utilisateur.
+    3) Tester la base de données.
+    4) Documenter les spécifications techniques.
+    **Réponse : 1**
+
+17. Qu'est-ce qu'un contexte borné (Bounded Context) ?
+    1) Une limite de protection qui encapsule les modèles et assure leur cohérence.
+    2) Un espace de stockage des données.
+    3) Un protocole de communication réseau.
+    4) Une vue utilisateur de l'interface.
+    **Réponse : 1**
+
+18. Quel type de relation existe dans un contexte 'Client-Fournisseur' ?
+    1) Les deux équipes sont indépendantes et travaillent sans concertation.
+    2) Le contexte du client dépend du contexte du fournisseur, et les équipes collaborent pour définir une interface.
+    3) Les équipes utilisent des données publiques sans dépendance mutuelle.
+    4) Les équipes échangent uniquement des informations de manière unidirectionnelle.
+    **Réponse : 2**
+
+19. Quelle est la fonction de la 'Couche Anticorruption' dans le DDD ?
+    1) Prévenir les conflits entre utilisateurs.
+    2) Protéger un contexte consommateur contre la pollution due à l'adaptation à un autre modèle.
+    3) Documenter les dépendances du système.
+    4) Mettre à jour automatiquement les données partagées.
+    **Réponse : 2**
+
+20. Quel est le rôle d'une 'Factory' dans la conception tactique ?
+    1) Créer des objets du domaine en encapsulant les vérifications nécessaires avant leur création.
+    2) Assurer la sécurité des données.
+    3) Fournir un modèle de conception pour les interfaces graphiques.
+    4) Remplacer les fonctions obsolètes.
+    **Réponse : 1**
+
+21. À quoi sert un 'Repository' en DDD ?
+    1) Stocker temporairement les données des utilisateurs.
+    2) Abstraire le stockage et la récupération des concepts de domaine.
+    3) Mettre à jour les informations d'identité des utilisateurs.
+    4) Réduire les erreurs de saisie utilisateur.
+    **Réponse : 2**
+
+22. Les 'Événements du Domaine' sont utiles pour :
+    1) Notifier des activités significatives dans le domaine.
+    2) Remplacer des fonctionnalités inutilisées.
+    3) Gérer les comptes utilisateurs.
+    4) Rédiger la documentation d'une application.
+    **Réponse : 1**
+
+23. Quelles sont les étapes clés du DDD ?
+    1) Développement d'interfaces graphiques et documentation.
+    2) Conception stratégique et conception tactique.
+    3) Test de performance et sécurité.
+    4) Optimisation des bases de données et déploiement.
+    **Réponse : 2**
+
+24. Un 'Agrégat' en DDD est :
+    1) Un ensemble de tables de bases de données.
+    2) Un cluster d'entités et d'objets de valeur contrôlé par une racine.
+    3) Un type d'interface utilisateur.
+    4) Un fichier de configuration.
+    **Réponse : 2**
+
+25. Qu'est-ce qu'un 'Service de Domaine' ?
+    1) Une interface utilisateur pour les clients.
+    2) Un service implémentant la logique métier qui orchestre le comportement des entités.
+    3) Un tableau de bord pour la gestion des utilisateurs.
+    4) Une base de données de stockage temporaire.
+    **Réponse : 2**
+
+26. Quel est l'objectif principal d'un système d'enchères en ligne ?
+    1) Permettre uniquement aux vendeurs de vendre des objets.
+    2) Permettre aux acheteurs et vendeurs d'effectuer des transactions commerciales.
+    3) Gérer les données personnelles des utilisateurs.
+    4) Calculer les coûts des enchères.
+    **Réponse : 2**
+
+27. Quel rôle joue le 'Diagramme de Contexte' dans la conception du système ?
+    1) Définir les couleurs de l'interface utilisateur.
+    2) Identifier les systèmes collaboratifs externes et spécifier les interfaces.
+    3) Stocker les données des utilisateurs.
+    4) Simplifier le code du système.
+    **Réponse : 2**
+
+28. Quel est le sous-domaine principal du système d'enchères ?
+    1) Gestion des utilisateurs
+    2) Gestion des enchères
+    3) Gestion des paiements
+    4) Gestion des notifications
+    **Réponse : 2**
+
+29. Dans le cas d'utilisation 'Create Auction', quelle information est requise pour créer une enchère ?
+    1) Seulement le nom de l'utilisateur
+    2) Les informations de l'enchère, y compris l'heure de début, la durée, et, si nécessaire, les informations de carte de crédit
+    3) La localisation du vendeur
+    4) Le nombre d'enchères actives
+    **Réponse : 2**
+
+30. Dans le DDD, qu'est-ce qu'une 'Commande d'Application' ?
+    1) Une fonctionnalité d'interface utilisateur pour organiser les pages
+    2) Une demande d'exécution d'une opération spécifique identifiée à partir des cas d'utilisation
+    3) Une liste de toutes les fonctionnalités du système
+    4) Un processus de gestion des erreurs dans le code
+    **Réponse : 2**
+
+31. Quel est le rôle du 'Data Transfer Object' (DTO) dans le système ?
+    1) Décorer l'interface utilisateur
+    2) Transférer des données entre les frontières de l'application pour éviter la pollution du domaine
+    3) Sécuriser les informations utilisateur
+    4) Tester la cohérence des données
+    **Réponse : 2**
+
+32. Quelles sont les préconditions pour créer une enchère ?
+    1) Le vendeur doit être déconnecté et sans paiements en attente.
+    2) Le vendeur doit être connecté et sans paiements en attente.
+    3) L'acheteur doit être connecté et sans enchère active.
+    4) Le vendeur doit fournir des informations d'expédition.
+    **Réponse : 2**
+
+33. Quelle est la post-condition principale lorsque l'enchère est créée ?
+    1) Le système envoie un email de confirmation.
+    2) L'enchère est ajoutée à la liste des enchères actives du vendeur.
+    3) L'enchère est supprimée de la base de données.
+    4) Le vendeur est déconnecté du système.
+    **Réponse : 2**
+
+34. Quel concept dans DDD permet de créer un ensemble d'entités ayant des responsabilités partagées ?
+    1) Entité
+    2) Agrégat
+    3) Service de domaine
+    4) Repository
+    **Réponse : 2**
+
+35. Dans un scénario où une carte de crédit est incluse dans les informations d'enchère, que fait le système ?
+    1) Ignore les informations de carte de crédit.
+    2) Crée une nouvelle carte de crédit associée au vendeur et à l'enchère.
+    3) Crée une nouvelle enchère sans carte de crédit.
+    4) Exige que le vendeur fournisse un numéro de téléphone.
+    **Réponse : 2**
+
+36. Qu'est-ce que le 'Behavior Driven Development' (BDD) permet de faire dans le contexte du système d'enchères ?
+    1) Créer des interfaces utilisateur.
+    2) Tester les comportements de l'application en utilisant un langage compréhensible par l'humain.
+    3) Automatiser la base de données.
+    4) Améliorer la rapidité d'exécution de l'application.
+    **Réponse : 2**
+
+37. Quel est l'avantage d'utiliser une façade dans chaque contexte borné ?
+    1) Simplifie la structure des bases de données.
+    2) Contrôle l'accès au contexte en encapsulant les composants internes.
+    3) Améliore la vitesse des transactions.
+    4) Permet de supprimer les vérifications de sécurité.
+    **Réponse : 2**
+
+38. Dans le cadre des niveaux de diagrammes de séquence, quel niveau montre l'interaction de la façade avec les éléments de haut niveau d'un contexte borné ?
+    1) Niveau 1
+    2) Niveau 2
+    3) Niveau 3
+    4) Niveau 4
+    **Réponse : 2**
+
+39. À quoi sert le 'Repository' en DDD ?
+    1) Simplifier le code source.
+    2) Fournir une abstraction pour la persistance des concepts de domaine.
+    3) Gérer les fichiers système.
+    4) Décorer l'interface utilisateur.
+    **Réponse : 2**
+
+40. Dans le processus d'enchère, quel est le rôle du 'Service de Domaine' ?
+    1) Fournir une interface utilisateur.
+    2) Orchestrer le comportement des entités sans posséder d'identité.
+    3) Décorer le profil du vendeur.
+    4) Tester les enchères créées.
+    **Réponse : 2**
+
+41. Selon Robert C. Martin, quel est l'objectif de l'architecture logicielle ?
+    1) Minimiser les besoins de stockage de données.
+    2) Minimiser les ressources humaines nécessaires pour créer et maintenir le système.
+    3) Maximiser les fonctionnalités d'une application.
+    4) Augmenter la vitesse de développement.
+    **Réponse : 2**
+
+42. Quelle est la définition IEEE de l'architecture logicielle ?
+    1) Organisation des composants matériels d'un système.
+    2) Ensemble des décisions de conception pour minimiser les coûts.
+    3) Organisation fondamentale d'un système, ses composants, et les principes de conception.
+    4) Documentation des processus de développement logiciel.
+    **Réponse : 3**
+
+43. Pourquoi l'architecture logicielle est-elle importante ?
+    1) Elle se concentre uniquement sur les interfaces utilisateur.
+    2) Elle permet la réutilisation et améliore la communication entre les parties prenantes.
+    3) Elle se concentre exclusivement sur les coûts de développement.
+    4) Elle n'est pas essentielle dans un projet mature.
+    **Réponse : 2**
+
+44. Quel est le rôle de l'architecte logiciel ?
+    1) Écrire tout le code de l'application.
+    2) Définir le problème du point de vue de l'ingénierie et gérer la dette technique.
+    3) Faire des tests utilisateurs uniquement.
+    4) Ne travailler que sur la documentation.
+    **Réponse : 2**
+
+45. Qu'est-ce qu'un framework d'architecture ?
+    1) Une bibliothèque de code spécifique.
+    2) Une pratique commune pour créer, interpréter et utiliser des descriptions d'architecture dans un domaine particulier.
+    3) Une interface utilisateur.
+    4) Un outil de gestion de base de données.
+    **Réponse : 2**
+
+46. Que décrit la Vue de Modules dans une architecture logicielle ?
+    1) Les interactions des utilisateurs avec le système.
+    2) La concurrence et la tolérance aux pannes.
+    3) La modifiabilité et la testabilité.
+    4) Les performances des serveurs uniquement.
+    **Réponse : 3**
+
+47. La Vue de Déploiement est principalement concernée par :
+    1) La structure du code source.
+    2) La redondance, la disponibilité et la fiabilité.
+    3) La création des interfaces graphiques.
+    4) La sécurité des utilisateurs.
+    **Réponse : 2**
+
+48. Quel est le but du processus de conception d'architecture ?
+    1) Structurer, valider et améliorer l'architecture.
+    2) Écrire des tests unitaires pour chaque module.
+    3) Limiter les coûts de développement.
+    4) Créer une interface utilisateur avancée.
+    **Réponse : 1**
+
+49. Qu'est-ce que le modèle '4+1' dans les frameworks d'architecture ?
+    1) Un modèle pour organiser les bases de données.
+    2) Un modèle de vue qui prend en compte les modules, la concurrence, le déploiement, et les scénarios d'utilisation.
+    3) Un système de gestion de projet.
+    4) Une structure de déploiement spécifique à une application.
+    **Réponse : 2**
+
+50. Quelle est l'étape finale du processus de conception ADD ?
+    1) Choix des concepts de conception.
+    2) Validation de la conception à l'aide d'une analyse.
+    3) Création d'un prototype de l'interface.
+    4) Déploiement de l'application.
+    **Réponse : 2**
+
+51. Quel est l'objectif d'une évaluation basée sur les scénarios ?
+    1) Fournir un rapport de performance aux clients.
+    2) Vérifier que la conception supporte les attributs de qualité requis.
+    3) Concevoir des interfaces utilisateur pour les scénarios.
+    4) Tester uniquement les contraintes de sécurité.
+    **Réponse : 2**
+
+52. Qu'est-ce que la dérive architecturale ?
+    1) Une modification de l'architecture pour améliorer la sécurité.
+    2) L'introduction de nouvelles décisions de conception sans violer les décisions existantes.
+    3) La suppression des composants obsolètes de l'architecture.
+    4) La mise à jour de la documentation de l'architecture.
+    **Réponse : 2**
+
+53. Quel est un exemple de scénario d'attribut de qualité en architecture logicielle ?
+    1) Développer une application mobile en 3 mois.
+    2) Assurer que le système reprend en moins de 30 secondes après une défaillance.
+    3) Créer une interface utilisateur en plusieurs langues.
+    4) Documenter tous les modules du système.
+    **Réponse : 2**
+
+54. Dans quel contexte utilise-t-on un modèle de référence ?
+    1) Lorsqu'il est nécessaire de créer des bases de données.
+    2) Pour fournir une structure logique globale à un type d'application.
+    3) Pour concevoir des interfaces utilisateur spécifiques.
+    4) Pour simplifier la documentation du code.
+    **Réponse : 2**
+
+55. Quels sont les composants d'une évaluation de l'architecture ?
+    1) Tests de compatibilité et documentations techniques.
+    2) Analyse de scénarios, évaluation quantitative et prototypage.
+    3) Création d'interfaces et documentation des processus.
+    4) Optimisation des performances et des coûts.
+    **Réponse : 2**
+
+56. Qu'est-ce que la vue de concurrence dans l'architecture logicielle ?
+    1) Une représentation des interfaces utilisateur.
+    2) Une vue des composants et de leur communication pendant l'exécution.
+    3) Un modèle de base de données.
+    4) Un diagramme de déploiement des composants matériels.
+    **Réponse : 2**
+
+57. Quel attribut de qualité n'est pas associé à la vue de concurrence ?
+    1) Performance
+    2) Fiabilité
+    3) Disponibilité
+    4) Portabilité
+    **Réponse : 4**
+
+58. Quels sont les éléments principaux dans une vue de concurrence ?
+    1) Interfaces utilisateur et serveurs
+    2) Composants et connecteurs
+    3) Bases de données et modèles de sécurité
+    4) Processeurs et mémoires
+    **Réponse : 2**
+
+59. Quel est un exemple de composant dans une architecture concurrente ?
+    1) Processeur
+    2) Base de données
+    3) Thread
+    4) Connexion Wi-Fi
+    **Réponse : 3**
+
+60. Que permet le middleware dans une architecture distribuée ?
+    1) De limiter la sécurité du réseau.
+    2) De gérer l'hétérogénéité et d'assurer l'intégration des services.
+    3) De restreindre l'accès aux données.
+    4) D'améliorer les performances des processeurs.
+    **Réponse : 2**
+
+61. Quel est un avantage de la communication asynchrone ?
+    1) Traçabilité accrue
+    2) Couplage fort
+    3) Blocage de l'appelant
+    4) Permettre à l'appelant de continuer son travail sans attendre la réponse
+    **Réponse : 4**
+
+62. Qu'est-ce qu'un appel de procédure distante (RPC) ?
+    1) Une méthode d'interrogation de base de données.
+    2) Une technique pour appeler des procédures distribuées comme si elles étaient locales.
+    3) Un protocole de communication pour la sécurité réseau.
+    4) Un modèle de déploiement pour les applications mobiles.
+    **Réponse : 2**
+
+63. Quels sont les composants nécessaires pour une communication RPC ?
+    1) Serveur et client
+    2) Base de données et interface utilisateur
+    3) Stub client et skeleton serveur
+    4) Thread et processus
+    **Réponse : 3**
+
+64. Dans quel cas utiliserait-on une architecture orientée événements ?
+    1) Pour une application de traitement par lots.
+    2) Pour des systèmes nécessitant une tolérance aux pannes et une scalabilité élevée.
+    3) Pour des logiciels en temps réel critique.
+    4) Pour des applications de bureau simples.
+    **Réponse : 2**
+
+65. Qu'est-ce que le Middleware Orienté Message (MOM) ?
+    1) Une base de données pour la messagerie.
+    2) Un service de gestion de sécurité pour les applications distribuées.
+    3) Un middleware permettant la communication asynchrone entre producteurs et consommateurs.
+    4) Un serveur de stockage de fichiers.
+    **Réponse : 3**
+
+66. Quelle est la différence entre le modèle point-à-point et le modèle publication/abonnement dans MOM ?
+    1) Le modèle point-à-point est
+
+ plus sécurisé.
+    2) Le modèle publication/abonnement permet de diffuser un message à plusieurs consommateurs.
+    3) Le modèle point-à-point utilise des requêtes HTTP.
+    4) Le modèle publication/abonnement est plus rapide que le modèle point-à-point.
+    **Réponse : 2**
+
+67. Qu'est-ce que la spécification AMQP ?
+    1) Un langage de programmation pour la sécurité des réseaux.
+    2) Un protocole pour l'interopérabilité des brokers de messages.
+    3) Une interface utilisateur pour les applications mobiles.
+    4) Un modèle de développement client/serveur.
+    **Réponse : 2**
+
+68. Quelle est une caractéristique de l'architecture orientée services (SOA) ?
+    1) Un couplage fort entre services.
+    2) Utilisation de services indépendants et sans état.
+    3) Exécution synchrone exclusivement.
+    4) Utilisation de modèles de données spécifiques.
+    **Réponse : 2**
+
+69. Qu'est-ce que REST ?
+    1) Un protocole de communication.
+    2) Un style architectural pour les services web.
+    3) Une base de données pour stocker des ressources.
+    4) Un modèle de cryptographie pour le réseau.
+    **Réponse : 2**
+
+70. Que permet la méthode GET dans une API REST ?
+    1) Supprimer une ressource.
+    2) Créer une nouvelle ressource.
+    3) Récupérer une représentation de la ressource.
+    4) Mettre à jour une ressource existante.
+    **Réponse : 3**
+
+71. Quelle est une limite courante des architectures REST ?
+    1) Utilisation excessive de données.
+    2) Compatibilité avec tous les clients.
+    3) Simplification de la gestion des erreurs.
+    4) Flexibilité des types de réponse.
+    **Réponse : 1**
+
+72. Quel est l'avantage principal de GraphQL par rapport à REST ?
+    1) Requêtes plus rapides
+    2) Une API adaptée aux besoins spécifiques du client
+    3) Moins de possibilités de personnalisation
+    4) Compatibilité avec les bases de données relationnelles uniquement
+    **Réponse : 2**
+
+73. Quelle est la fonction d'une mutation dans GraphQL ?
+    1) Lire les données.
+    2) Mettre à jour ou modifier des données.
+    3) Supprimer les utilisateurs non authentifiés.
+    4) Mettre en cache les données pour une meilleure performance.
+    **Réponse : 2**
+

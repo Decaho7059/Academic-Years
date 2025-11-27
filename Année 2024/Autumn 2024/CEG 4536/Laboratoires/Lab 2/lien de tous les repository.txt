@@ -1,0 +1,9 @@
+lien du drive du lab : ttps://drive.google.com/drive/folders/18ANIy21YyBnjZON1Trf0eSG3ara-fEuw
+
+Lien de la presentation : https://docs.google.com/presentation/d/1uZv9bJBwo1EIfwn2Zh45FFdvE2-m7XYrPVYKUMx0AKw/edit#slide=id.p1
+
+
+lien du google colab : https://colab.research.google.com/drive/1TmsVWK17w2oQ9qMm0gtl8trXXMlx9ayo?usp=sharing
+
+
+lien du GitHub du lab : https://github.com/aztazrout/ceg4536-lab2.git

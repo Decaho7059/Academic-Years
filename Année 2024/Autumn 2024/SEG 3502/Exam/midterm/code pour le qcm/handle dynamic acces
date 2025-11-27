@@ -1,0 +1,11 @@
+Pseudo-code
+
+IF user.security_clearance == "Top Secret"
+AND resource.document_sensitivity == "Confidential"
+AND environment.user_location NOT IN ("Organization's Country")
+DENY access;
+
+IF user.security_clearance == "Top Secret"
+AND resource.document_sensitivity == "Confidential"
+AND environment.user_location IN ("Organization's Country")
+ALLOW access;
