@@ -1,0 +1,140 @@
+/*------------------------------------------------------------
+Fichier: cpr.c
+
+Nom: Gbegbe Decaho Jacques Françis
+Numero d'etudiant:300094197
+
+Description: Ce programme contient le code pour la creation
+             d'un processus enfant et y attacher un tuyau.
+	     L'enfant envoyera des messages par le tuyau
+	     qui seront ensuite envoyes a la sortie standard.
+
+Explication du processus zombie
+(point 5 de "A completer" dans le devoir):
+Un processus zombie est un processus qui s'est terminé mais qui
+est toujours visible dans la table des processus
+(c'est à dire qui a conservé son identifiant de processus)
+
+	(s.v.p. completez cette partie);
+
+-------------------------------------------------------------*/
+#include <stdio.h>
+#include <sys/select.h>
+
+/* Prototype */
+void creerEnfantEtLire(int );
+
+/*-------------------------------------------------------------
+Function: main
+Arguments:
+	int ac	- nombre d'arguments de la commande
+	char **av - tableau de pointeurs aux arguments de commande
+Description:
+	Extrait le nombre de processus a creer de la ligne de
+	commande. Si une erreur a lieu, le processus termine.
+	Appel creerEnfantEtLire pour creer un enfant, et lire
+	les donnees de l'enfant.
+-------------------------------------------------------------*/
+
+int main(int ac, char **av)
+{
+    int numeroProcessus;
+
+    if(ac == 2)
+    {
+       if(sscanf(av[1],"%d",&numeroProcessus) == 1)
+       {
+           creerEnfantEtLire(numeroProcessus);
+       }
+       else fprintf(stderr,"Ne peut pas traduire argument\n");
+    }
+    else fprintf(stderr,"Arguments pas valide\n");
+    return(0);
+}
+
+/*-------------------------------------------------------------
+Function: creerEnfantEtLire
+Arguments:
+	int prcNum - le numero de processus
+Description:
+	Cree l'enfant, en y passant prcNum-1. Utilise prcNum
+	comme identificateur de ce processus. Aussi, lit les
+	messages du bout de lecture du tuyau et l'envoie a
+	la sortie standard (df 1). Lorsqu'aucune donnee peut
+	etre lue du tuyau, termine.
+-------------------------------------------------------------*/
+
+void creerEnfantEtLire(int prcNum)
+{
+
+    /* S.V.P. completez cette fonction selon les
+       instructions du devoirs. */
+
+    char prcNum_buf[32];
+    sprintf("Processus %d commence \n", prcNum);
+    write(1, prcNum_buf, strlen(prcNum_buf));
+
+
+    //cas d'erreur ou prcNum est <0
+    if (prcNum < 1)
+    {
+        fprintf(stderr, "Erreur: valeur entrer est incorrect veuillez réessayer avec prcNum>= 1 ");
+    }
+
+    //cas ou prcNum est 1
+    if (prcNum == 1)
+    {
+        sleep(5);  // le processus doit attendre 5s
+    }
+
+    //cas ou prcNum est positif et + que 1
+    if (prcNum > 1)
+    {
+       int df[2]; // (0)= read(0, buf, 4) et (1) = write(0, buf, 4)
+       pipe(df);  // créé un tuyau de taille df
+
+       int pid = fork();  // création de l'enfant
+
+       // cas d'erreur
+       if (pid == -1)
+        {
+            fprintf(stderr, "création de l'enfant à échouer.\n");
+       //exit(1);
+
+        }
+       // Cas enfant est null
+       else if (pid == 0)
+         {
+            dup2(df[1], 1); // sdtout maintenant écris dans le tuyau
+
+            char nombre_de_lettre[10];  // preparer une liste d'arguments
+            sprintf(nombre_de_lettre, "%d", prcNum-1);
+
+            //char*args[] = {"cpr", nombre_de_lettre, NULL};
+            execlp(args[0], args[0], nombre_de_lettre, NULL);
+         }
+
+       //cas Action d'un parent
+       else
+        {
+            close(df[1]);
+            //fflush(stdout);
+            char readB[512];
+            int num = 0;
+            while((num = read(df[0], readB, 512))>0)
+                {
+                      write(1, readB, num);
+                }
+                wait(NULL);
+        }
+    }
+    sprintf(prcNum_buf, "Processus %d termine\n", prcNum);
+    write(1, prcNum_buf, strlen(prcNum_buf))
+
+    sleep(10);
+
+    close(1);
+
+    return 0;
+}
+
