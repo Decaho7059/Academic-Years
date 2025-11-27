@@ -1,0 +1,1614 @@
+####################################################################################3
+Cours 7
+
+Quelle est la principale raison pour laquelle les ensembles de données sont divisés dans l'apprentissage automatique ?
+
+A) Pour maximiser la taille des ensembles d'entraînement
+B) Pour économiser de l'espace mémoire
+C) Pour évaluer les performances et généraliser les modèles
+D) Pour faciliter la visualisation des données
+Réponse : C​
+
+Quelle technique est utilisée pour évaluer et améliorer les performances des modèles en partitionnant les données en sous-ensembles ?
+
+A) Validation croisée
+B) Régression linéaire
+C) Clustering
+D) Normalisation des données
+Réponse : A​
+
+En validation croisée -fold, combien de parties (plis) sont utilisées pour l'entraînement si le pli de validation est 1 ?
+
+A) 0
+B) -1
+C) k-1
+D) k
+Réponse : C​
+
+Qu'est-ce qu'un hyperparamètre dans le contexte de l'apprentissage automatique ?
+
+A) Un paramètre ajusté par le modèle automatiquement
+B) Un paramètre prédéfini et réglé manuellement avant l'entraînement
+C) Un paramètre calculé uniquement à la fin de l'entraînement
+D) Une mesure de la performance du modèle
+Réponse : B​
+
+La méthode de recherche utilisée pour l'ajustement des hyperparamètres impliquant l'exploration de toutes les combinaisons possibles est appelée :
+
+A) Recherche aléatoire
+B) Validation croisée
+C) Recherche en grille
+D) Sélection des caractéristiques
+Réponse : C​
+
+Lorsqu'un modèle a une erreur d'entraînement faible mais une erreur de généralisation élevée, il est probablement :
+
+A) En sous-apprentissage
+B) Bien équilibré
+C) En sur-apprentissage
+D) Mal conçu
+Réponse : C​
+
+Quel est l’avantage de la validation croisée par rapport à une seule division entraînement-test ?
+
+A) Elle prend moins de temps
+B) Elle fournit une meilleure évaluation de la performance sur l'ensemble des données
+C) Elle réduit la taille des ensembles d’entraînement
+D) Elle élimine le besoin de prétraitement des données
+Réponse : B​
+
+Qu'est-ce que l'ensemble de test dans l'apprentissage automatique ?
+
+A) Un sous-ensemble utilisé pour entraîner le modèle
+B) Un sous-ensemble réservé pour évaluer la performance finale du modèle
+C) L'ensemble complet des données
+D) L'ensemble utilisé pour ajuster les hyperparamètres
+Réponse : B
+
+Qu’est-ce qu’une erreur de généralisation ?
+
+A) L'erreur observée lors de l'entraînement
+B) L'erreur obtenue en ajustant les hyperparamètres
+C) L'erreur observée lorsque le modèle est évalué sur des données nouvelles et non vues
+D) L'erreur liée à la régression linéaire
+Réponse : C​
+
+Quelle est la différence entre un paramètre de modèle et un hyperparamètre ?
+
+A) Un paramètre de modèle est défini avant l'entraînement, un hyperparamètre est appris pendant l'entraînement
+B) Un paramètre de modèle est appris pendant l'entraînement, un hyperparamètre est défini avant l'entraînement
+C) Les deux sont appris pendant l'entraînement
+D) Les deux sont définis avant l'entraînement
+Réponse : B​
+
+Pourquoi est-il important d'utiliser la validation croisée dans l'évaluation des modèles ?
+
+A) Pour entraîner le modèle plus rapidement
+B) Pour obtenir une estimation fiable de la performance du modèle sur des données non vues
+C) Pour économiser de l’espace mémoire
+D) Pour éviter de faire un prétraitement des données
+Réponse : B​
+
+La méthode "holdout" pour diviser les données alloue généralement :
+
+A) 100% pour l'entraînement
+B) 70% pour l'entraînement, 30% pour le test
+C) 80% pour l'entraînement, 20% pour le test
+D) 50% pour l'entraînement, 50% pour le test
+Réponse : C​
+
+Qu'est-ce que la fonction GridSearchCV dans scikit-learn ?
+
+A) Un outil pour effectuer une validation croisée en k-plis
+B) Un outil pour ajuster les hyperparamètres par recherche exhaustive
+C) Une méthode de normalisation des données
+D) Une fonction pour entraîner le modèle sur l'ensemble de test
+Réponse : B
+
+Quel problème est associé à une erreur d'entraînement élevée ?
+
+A) Sur-apprentissage
+B) Sous-apprentissage
+C) Bonne généralisation
+D) Validation croisée inadéquate
+Réponse : B​
+
+Dans un modèle en sous-apprentissage, on observe généralement :
+
+A) Une faible performance sur les données d'entraînement et de test
+B) Une excellente performance sur les nouvelles données
+C) Une faible erreur de généralisation
+D) Une grande précision pendant l'entraînement
+Réponse : A​
+
+Quels sont les critères principaux pour évaluer les performances d'un modèle ?
+
+A) La vitesse d'entraînement et la taille du modèle
+B) La précision, la sensibilité, la spécificité, et la courbe ROC
+C) Le nombre d'attributs et de classes
+D) L'algorithme utilisé pour l'entraînement
+Réponse : B​
+
+Quelle est une bonne pratique pour assurer la cohérence entre les environnements d’entraînement et de production ?
+
+A) Utiliser des transformations de données différentes
+B) Exclure les données de validation
+C) Appliquer des transformations de données cohérentes
+D) Limiter la taille des données de production
+Réponse : C​
+
+
+####################################################################################3
+Cours 8
+
+Quel est le rôle de la taille de l'ensemble de données en apprentissage automatique ?
+
+A) Améliorer la vitesse de calcul
+B) Influencer la robustesse du modèle
+C) Réduire le coût de l'entraînement
+D) Augmenter le nombre d'attributs
+Réponse : B
+
+Qu'est-ce que l'augmentation des données vise à améliorer ?
+
+A) La précision du modèle
+B) La diversité de l'ensemble de données
+C) La simplicité du modèle
+D) La vitesse de calcul
+Réponse : B
+
+L’encodage one-hot est principalement utilisé pour :
+
+A) Les données numériques
+B) Les données catégorielles
+C) Les données continues
+D) La standardisation
+Réponse : B
+
+Quand utiliser la normalisation plutôt que la standardisation ?
+
+A) Lorsque les données sont gaussiennes
+B) Pour mettre les attributs sur une échelle comparable
+C) Quand les données sont très dispersées
+D) Pour les données avec un grand nombre de catégories
+Réponse : B
+
+La technique SMOTE est utilisée pour :
+
+A) Normaliser les données
+B) Résoudre le problème de déséquilibre des classes
+C) Réduire la taille des données
+D) Générer des modèles de référence
+Réponse : B
+
+Les réseaux antagonistes génératifs (GANs) servent principalement à :
+
+A) Encoder les attributs
+B) Standardiser les données
+C) Générer des données synthétiques
+D) Réduire le nombre d'attributs
+Réponse : C
+
+La standardisation d'un attribut signifie :
+
+A) Le normaliser entre 0 et 1
+B) Le transformer pour qu'il ait une moyenne de 0 et un écart-type de 1
+C) Le convertir en variable catégorielle
+D) Le rendre binaire
+Réponse : B
+
+Pourquoi est-il important de gérer les valeurs manquantes dans un ensemble de données ?
+
+A) Pour éviter les biais de modélisation
+B) Pour augmenter la taille des données
+C) Pour rendre les données plus lisibles
+D) Pour améliorer la visualisation des données
+Réponse : A
+
+Quelle est une application courante de l'ingénierie des attributs ?
+
+A) Remplacer les modèles existants
+B) Améliorer les performances du modèle
+C) Réduire le nombre d'attributs
+D) Générer des étiquettes
+Réponse : B
+
+L'ensemble de données 'Adult' est un exemple de données utilisées pour :
+
+A) La régression linéaire
+B) La classification binaire
+C) La standardisation
+D) Le clustering
+Réponse : B
+
+Quelle est l'efficacité déraisonnable des données selon Peter Norvig ?
+
+A) La capacité des données volumineuses à surpasser les algorithmes sophistiqués
+B) La réduction des besoins en données grâce à des algorithmes complexes
+C) L'importance d'une extraction de caractéristiques précise
+D) L'augmentation des données pour chaque algorithme
+Réponse : A
+
+Quel est l'avantage de l'augmentation des données pour les images ?
+
+A) Augmenter les attributs numériques
+B) Réduire le bruit
+C) Renforcer la robustesse du modèle
+D) Améliorer la vitesse d'entraînement
+Réponse : C
+
+La connaissance du domaine est utile pour :
+
+A) L'augmentation des données
+B) La validation croisée
+C) L'extraction des attributs
+D) La réduction de la dimensionnalité
+Réponse : C
+
+L'imputation est une technique pour :
+
+A) Gérer les valeurs manquantes
+B) Normaliser les données
+C) Augmenter la robustesse du modèle
+D) Encoder les variables catégorielles
+Réponse : A
+
+L'encodage ordinal est le plus adapté pour :
+
+A) Les variables de texte
+B) Les variables numériques continues
+C) Les données catégorielles avec un ordre naturel
+D) Les données binaires
+Réponse : C
+
+Pourquoi est-il utile de diviser un ensemble de données en sous-ensembles ?
+
+A) Pour réduire les besoins en mémoire
+B) Pour évaluer la capacité de généralisation du modèle
+C) Pour standardiser les données
+D) Pour faciliter le prétraitement
+Réponse : B
+
+Quel est un défi de l'ingénierie des attributs ?
+
+A) Elle est rapide à réaliser
+B) Elle nécessite peu de créativité
+C) Elle est laborieuse et demande une connaissance approfondie du domaine
+D) Elle nécessite de vastes ensembles de données
+Réponse : C
+
+Quel est l'objectif principal de la normalisation ?
+
+A) Réduire le nombre de données
+B) Réduire les biais de modélisation
+C) Mettre les valeurs sur une échelle comparable
+D) Augmenter la précision des modèles de régression
+Réponse : C
+
+Pourquoi le suréchantillonnage peut-il être utilisé ?
+
+A) Pour augmenter le nombre de caractéristiques
+B) Pour corriger un déséquilibre de classes
+C) Pour réduire la complexité du modèle
+D) Pour améliorer la robustesse du modèle
+Réponse : B
+
+Les transformations de données appliquées en augmentation des données pour les textes incluent :
+
+A) Le redimensionnement et la rotation
+B) L'ajout de bruit et l'inversion
+C) Le remplacement de synonymes et la permutation des mots
+D) Le suréchantillonnage
+Réponse : C
+
+####################################################################################3
+Cours 9
+
+Quelle est la structure de base d'un réseau neuronal artificiel ?
+
+A) Un ensemble de règles logiques
+B) Une collection de perceptrons
+C) Des neurones interconnectés en couches
+D) Un système basé sur des symboles
+Réponse : C​
+
+Quel est l'objectif principal d'une fonction d'activation dans un réseau de neurones ?
+
+A) Maximiser la vitesse de calcul
+B) Introduire la non-linéarité
+C) Normaliser les données d'entrée
+D) Minimiser l'erreur d'entraînement
+Réponse : B​
+
+Les réseaux de neurones artificiels sont inspirés de quel type de réseaux ?
+
+A) Réseaux de neurones biologiques
+B) Réseaux informatiques
+C) Réseaux symboliques
+D) Réseaux de communication
+Réponse : A
+
+Qu'est-ce qu'un perceptron ?
+
+A) Un algorithme d'apprentissage par renforcement
+B) Une unité de calcul pour des tâches de classification
+C) Un réseau de neurones multicouche
+D) Un type de fonction d'activation
+Réponse : B​
+
+Quelle est la principale limitation du perceptron simple ?
+
+A) Il ne peut pas résoudre les problèmes non linéaires comme XOR
+B) Il nécessite une puissance de calcul élevée
+C) Il est uniquement applicable aux données continues
+D) Il ne peut pas être entraîné
+Réponse : A​
+
+La rétropropagation est un algorithme utilisé pour :
+
+A) Choisir les données d'entraînement
+B) Calculer les dérivées partielles
+C) Ajuster les poids dans un réseau multicouche
+D) Normaliser les données de sortie
+Réponse : C​
+
+Quel type de fonction d'activation est souvent utilisé pour éviter le problème de la vanishing gradient ?
+
+A) Fonction sigmoïde
+B) Fonction tangente hyperbolique
+C) ReLU
+D) Fonction de seuil
+Réponse : C​
+
+Qu'est-ce que la classification multilabel ?
+
+A) Associer chaque instance à une seule classe
+B) Classer les instances dans plusieurs classes simultanément
+C) Traiter uniquement des données binaires
+D) Associer une étiquette continue à chaque instance
+Réponse : B​
+
+Le théorème d'approximation universelle affirme que :
+
+A) Un réseau de neurones profond peut résoudre tout problème
+B) Un réseau avec une seule couche cachée peut approximer toute fonction continue
+C) Tous les réseaux peuvent être représentés par un perceptron
+D) La rétropropagation est universelle
+Réponse : B​
+
+Qu'est-ce qu'un réseau de neurones à propagation avant (FNN) ?
+
+A) Un réseau qui fonctionne uniquement avec des données séquentielles
+B) Un réseau où l'information circule dans une seule direction
+C) Un réseau avec des cycles
+D) Un réseau sans couches cachées
+Réponse : B​
+
+Quelle est la différence entre un classificateur multiclass et un classificateur multilabel ?
+
+A) Le classificateur multiclass gère plusieurs étiquettes par instance
+B) Le classificateur multilabel gère une seule étiquette par instance
+C) Le classificateur multiclass associe chaque instance à une seule classe
+D) Les deux n'ont aucune différence
+Réponse : C
+
+Le modèle multicouche développé par Frank Rosenblatt est appelé :
+
+A) Perceptron
+B) Perceptron multicouche (MLP)
+C) Réseau convolutif
+D) Réseau récurrent
+Réponse : B​
+
+Quelle fonction d'activation produit des valeurs de sortie allant de -1 à 1 ?
+
+A) Fonction sigmoïde
+B) Fonction ReLU
+C) Fonction tangente hyperbolique
+D) Fonction de seuil
+Réponse : C​
+
+Quels sont les frameworks courants pour développer des modèles d'apprentissage profond ?
+
+A) Java et HTML
+B) PyTorch, TensorFlow et Keras
+C) MySQL et MongoDB
+D) Hadoop et Spark
+Réponse : B​
+
+Qu'est-ce que le dataset Fashion-MNIST ?
+
+A) Un ensemble de données d'articles de mode pour la régression
+B) Un ensemble de données d'images pour la classification d'articles de mode
+C) Un ensemble de données textuelles pour l'analyse de sentiment
+D) Un jeu de données de flux vidéo
+Réponse : B
+
+Pourquoi est-il utile d'ajouter des termes de biais dans un réseau de neurones ?
+
+A) Pour éviter le surapprentissage
+B) Pour ajuster la frontière de décision
+C) Pour normaliser les données
+D) Pour réduire le nombre de paramètres
+Réponse : B
+
+Qu'est-ce qu'une unité d'entrée explicite ?
+
+A) Un neurone dans la couche de sortie
+B) Un neurone qui ne réalise aucun calcul
+C) Un neurone qui maximise la fonction de perte
+D) Un neurone de la couche cachée
+Réponse : B​(cours 9)
+Pourquoi les réseaux de neurones profonds sont-ils utilisés pour approximations complexes ?
+
+A) Parce qu'ils n'ont pas besoin de fonctions d'activation
+B) En raison de leur capacité à modéliser des hiérarchies de concepts
+C) Parce qu'ils sont plus rapides que les réseaux simples
+D) Parce qu'ils nécessitent moins de données
+Réponse : B
+
+Dans un réseau de neurones, qu'est-ce que le produit scalaire entre les vecteurs de poids et les vecteurs d'entrée ?
+
+A) Un biais
+B) Un neurone caché
+C) Une somme pondérée qui détermine la sortie du neurone
+D) Une fonction d'activation
+Réponse : C​
+
+Pourquoi la fonction ReLU est-elle préférée dans les réseaux profonds ?
+
+A) Elle est linéaire
+B) Elle est plus computationnellement efficace et atténue le problème de la vanishing gradient
+C) Elle n'a pas de dérivée
+D) Elle réduit la nécessité de la rétropropagation
+Réponse : B​
+
+####################################################################################3
+
+Cours 10
+
+Qu'est-ce qu'un réseau neuronal à propagation directe (FNN) ?
+
+A) Un réseau où l'information circule en boucle
+B) Un réseau où l'information circule uniquement de l'entrée vers la sortie
+C) Un réseau où chaque couche est connectée à la suivante et la précédente
+D) Un réseau basé sur des règles logiques
+Réponse : B
+
+Quel est le rôle de la fonction d'activation dans un réseau neuronal ?
+
+A) Normaliser les données d'entrée
+B) Introduire de la non-linéarité pour modéliser des relations complexes
+C) Calculer les dérivées partielles
+D) Gérer les poids des connexions
+Réponse : B
+
+Quel problème majeur la fonction ReLU aide-t-elle à résoudre dans les réseaux de neurones profonds ?
+
+A) Le surapprentissage
+B) Le problème de gradient explosif
+C) Le problème de gradient qui disparaît
+D) L'instabilité des données d'entrée
+Réponse : C
+
+La rétropropagation est un algorithme permettant :
+
+A) D'encoder les données en one-hot
+B) De calculer les poids initiaux du réseau
+C) D'ajuster les poids en fonction de l'erreur de sortie
+D) D'ajouter de nouvelles couches au réseau
+Réponse : C
+
+Le théorème d'approximation universelle indique qu'un réseau à propagation directe avec une seule couche cachée peut :
+
+A) Apprendre uniquement des fonctions linéaires
+B) Approximativement n'importe quelle fonction continue
+C) Apprendre sans rétropropagation
+D) Ne pas être utilisé pour la classification
+Réponse : B
+
+Qu'est-ce qu'une unité de seuil dans un réseau neuronal ?
+
+A) Une unité qui transforme chaque entrée en sortie binaire
+B) Une unité qui ne réalise aucun calcul
+C) Une unité utilisée uniquement pour les réseaux récurrents
+D) Une unité spéciale pour les couches de sortie
+Réponse : A
+
+Quelle est la fonction d'activation produisant des valeurs de sortie entre -1 et 1 ?
+
+A) Sigmoïde
+B) Tangente hyperbolique (tanh)
+C) ReLU
+D) Fonction de seuil
+Réponse : B
+
+La méthode de rétropropagation ajuste les poids des connexions dans un réseau afin de :
+
+A) Maximiser l'activation de toutes les unités
+B) Minimiser l'erreur entre la sortie réelle et la sortie désirée
+C) Réduire le nombre de neurones cachés
+D) Simplifier le modèle
+Réponse : B
+
+Pourquoi la rétropropagation est-elle essentielle dans l'apprentissage profond ?
+
+A) Elle améliore la vitesse de calcul
+B) Elle permet d'apprendre des représentations complexes à travers des couches cachées
+C) Elle supprime le besoin d'une fonction d'activation
+D) Elle rend le modèle moins flexible
+Réponse : B
+
+Dans un réseau multicouche, quelle couche calcule la sortie finale ?
+
+A) La couche d'entrée
+B) La première couche cachée
+C) La couche de sortie
+D) La couche de pondération
+Réponse : C
+
+Quelle fonction d'activation est souvent utilisée pour les réseaux de neurones profonds en raison de sa simplicité et de son efficacité ?
+
+A) Fonction sigmoïde
+B) Tangente hyperbolique
+C) ReLU
+D) Softmax
+Réponse : C
+
+Quel type de réseau est principalement utilisé pour la classification d'images ?
+
+A) Réseau de neurones récurrent (RNN)
+B) Réseau de neurones convolutif (CNN)
+C) Réseau de neurones à propagation directe (FNN)
+D) Perceptron simple
+Réponse : B
+
+L'apprentissage supervisé consiste à :
+
+A) Utiliser des données non étiquetées pour former un modèle
+B) Fournir des exemples d'entrée et de sortie au modèle
+C) Permettre au modèle de découvrir des patterns seul
+D) Utiliser uniquement des réseaux convolutifs
+Réponse : B
+
+Un réseau multicouche est aussi appelé :
+
+A) Réseau unidimensionnel
+B) Réseau de neurones récurrent
+C) Perceptron multicouche (MLP)
+D) Réseau supervisé
+Réponse : C
+
+Qu'est-ce qu'une "couche cachée" dans un réseau de neurones ?
+
+A) Une couche qui ne reçoit pas d'entrée directe ni ne produit de sortie visible
+B) Une couche spéciale pour les réseaux convolutifs
+C) Une couche qui reçoit les données de sortie finale
+D) Une couche qui ne peut pas être entraînée
+Réponse : A
+
+L'entraînement d'un réseau de neurones consiste principalement à :
+
+A) Normaliser les données
+B) Trouver les meilleurs poids pour les connexions
+C) Évaluer la précision du modèle
+D) Ajouter de nouvelles couches
+Réponse : B
+
+La tangente hyperbolique (tanh) est une fonction d'activation avec des valeurs de sortie entre :
+
+A) 0 et 1
+B) -1 et 1
+C) 0 et infini
+D) -1 et infini
+Réponse : B
+
+Quel est l'objectif de la normalisation des données avant l'entraînement d'un réseau de neurones ?
+
+A) Réduire le nombre de neurones cachés
+B) Faciliter la convergence en réduisant les écarts entre valeurs
+C) Supprimer les valeurs aberrantes
+D) Accélérer l'algorithme de rétropropagation
+Réponse : B
+
+Une fonction de coût dans un réseau de neurones est utilisée pour :
+
+A) Calculer l'activation de chaque neurone
+B) Mesurer l'erreur entre la sortie prédite et la sortie réelle
+C) Déterminer les valeurs d'entrée du réseau
+D) Assurer l'équilibrage des classes
+Réponse : B
+
+Le gradient d'une fonction de coût permet de :
+
+A) Normaliser les données d'entrée
+B) Ajuster les poids pour minimiser l'erreur
+C) Rendre la fonction d'activation plus linéaire
+D) Supprimer les neurones inutiles
+Réponse : B
+
+####################################################################################3
+
+Cours 11
+
+Quelle fonction d'activation est utilisée pour normaliser les sorties de la couche finale en probabilités totalisant 1 ?
+
+A) Sigmoid
+B) ReLU
+C) Softmax
+D) Tanh
+Réponse : C
+
+Dans une tâche de classification binaire, quelle fonction d'activation est généralement utilisée en sortie ?
+
+A) Softmax
+B) Sigmoid
+C) ReLU
+D) Tanh
+Réponse : B
+
+La fonction de perte d'entropie croisée est idéale pour :
+
+A) Les tâches de régression
+B) Les tâches de classification multiclasses
+C) Les réseaux récurrents
+D) La régularisation des modèles
+Réponse : B
+
+Quel est l'objectif principal de la régularisation dans les réseaux neuronaux ?
+
+A) Améliorer la performance de calcul
+B) Réduire le surapprentissage
+C) Optimiser le gradient
+D) Normaliser les données
+Réponse : B
+
+Le dropout est une technique de régularisation qui consiste à :
+
+A) Réduire la taille des neurones
+B) Désactiver certains neurones de manière aléatoire durant l'entraînement
+C) Ajouter des neurones supplémentaires pour améliorer l'apprentissage
+D) Normaliser les sorties du réseau
+Réponse : B
+
+La rétropropagation est utilisée dans les réseaux de neurones pour :
+
+A) Initialiser les poids
+B) Mettre à jour les poids en fonction de l'erreur
+C) Ajouter de nouvelles couches
+D) Normaliser les entrées
+Réponse : B
+
+La régularisation L1 encourage :
+
+A) Des poids petits et répartis
+B) La parcimonie en réduisant certains poids à zéro
+C) L'augmentation des biais
+D) Une grande flexibilité dans le réseau
+Réponse : B
+
+La fonction d'activation ReLU est souvent choisie pour :
+
+A) Les couches de sortie dans les tâches de régression
+B) Les tâches de classification multiclasses
+C) Éviter le problème du gradient qui disparaît
+D) Réduire la taille des vecteurs d'entrée
+Réponse : C
+
+Quelle est la norme souvent utilisée pour encourager des poids petits et répartis dans la régularisation ?
+
+A) Norme L1
+B) Norme L2
+C) Norme de Manhattan
+D) Norme p
+Réponse : B
+
+Quelle technique interrompt l'entraînement lorsque la performance sur un ensemble de validation commence à se dégrader ?
+
+A) Rétropropagation
+B) Dropout
+C) Early Stopping
+D) Normalisation
+Réponse : C
+
+Le théorème d'approximation universelle indique qu'un réseau de neurones avec une seule couche cachée peut :
+
+A) Réaliser une classification parfaite
+B) Approximer toute fonction continue
+C) Résoudre uniquement des problèmes linéaires
+D) Réduire le surapprentissage
+Réponse : B
+
+Dans l'entropie croisée, seul le terme correspondant à la classe réelle contribue une valeur non nulle car :
+
+A) Toutes les classes sont traitées indépendamment
+B) Seule la classe correcte est pondérée
+C) Le vecteur cible est encodé en one-hot
+D) Les autres valeurs sont toujours nulles
+Réponse : C
+
+En utilisant la fonction softmax, la sortie du réseau peut être interprétée comme :
+
+A) Des valeurs normalisées pour chaque neurone
+B) Des scores de similarité
+C) Des probabilités pour chaque classe
+D) Une seule valeur binaire
+Réponse : C
+
+Quelle est la différence principale entre la régularisation L1 et L2 ?
+
+A) L1 favorise des poids petits et non nuls, L2 encourage des poids très petits
+B) L1 favorise des poids nuls, L2 encourage des poids proches de zéro
+C) L1 et L2 n'ont aucune différence
+D) L1 est plus computationnellement efficace que L2
+Réponse : B
+
+Le terme de régularisation dans une fonction de perte permet de :
+
+A) Optimiser l'entraînement du modèle
+B) Ajouter des neurones supplémentaires
+C) Réduire les poids du réseau pour éviter la complexité excessive
+D) Mettre à jour les poids en fonction de l'erreur
+Réponse : C
+
+Pour un problème de détection d'objet, la tâche de prédire les boîtes englobantes est une tâche de :
+
+A) Classification
+B) Régression
+C) Clustering
+D) Prédiction de texte
+Réponse : B
+
+L'entropie croisée converge plus rapidement que l'erreur quadratique moyenne (MSE) car :
+
+A) Elle traite directement les valeurs nulles
+B) Elle pénalise fortement les mauvaises prédictions
+C) Elle ignore les mauvaises prédictions
+D) Elle favorise uniquement les petites valeurs
+Réponse : B
+
+Un neurone ayant une fonction de perte MSE sera utile pour une tâche de :
+
+A) Classification
+B) Régression
+C) Optimisation
+D) Prédiction binaire
+Réponse : B
+
+Le dropout favorise une meilleure généralisation car :
+
+A) Il rend le modèle plus complexe
+B) Il réduit la co-adaptation des neurones
+C) Il optimise uniquement la sortie
+D) Il permet d'augmenter le nombre de neurones
+Réponse : B
+
+En régularisation L2, un poids de régularisation élevé :
+
+A) Ne change pas les valeurs de poids
+B) Augmente la co-adaptation entre neurones
+C) Encourage des poids plus petits
+D) Supprime certains neurones
+Réponse : C
+
+####################################################################################3
+
+Cours 12
+
+Quel est le principal avantage des réseaux neuronaux profonds par rapport aux réseaux peu profonds ?
+
+A) Ils nécessitent moins de données d'entraînement
+B) Ils peuvent modéliser des fonctions complexes avec moins de neurones
+C) Ils sont plus rapides à entraîner
+D) Ils ne nécessitent pas de couches cachées
+Réponse : B
+
+Les réseaux convolutifs (CNN) sont particulièrement efficaces pour traiter quel type de données ?
+
+A) Données textuelles
+B) Données temporelles
+C) Images structurées en grille
+D) Données catégorielles
+Réponse : C
+
+Que représente le terme "champ récepteur" dans un réseau convolutif ?
+
+A) L'ensemble des neurones de la couche précédente
+B) Une zone spécifique de l'image analysée par un neurone
+C) Le noyau de convolution
+D) La taille de l'image d'entrée
+Réponse : B
+
+Dans les réseaux convolutifs, quel est le rôle du "padding" ?
+
+A) Réduire la taille de l'image
+B) Ajouter des valeurs autour des bords pour préserver les dimensions
+C) Améliorer la vitesse de calcul
+D) Ignorer certaines parties de l'image
+Réponse : B
+
+Qu'est-ce que le "stride" dans un CNN ?
+
+A) La taille du noyau
+B) Le nombre de pixels que le noyau se déplace à chaque étape
+C) Le nombre de couches du réseau
+D) L'activation du neurone de sortie
+Réponse : B
+
+Pourquoi les couches de pooling sont-elles utilisées dans les CNN ?
+
+A) Pour augmenter la taille des données
+B) Pour réduire la dimensionnalité tout en préservant les caractéristiques
+C) Pour éliminer le bruit dans les données
+D) Pour fusionner les couches convolutives
+Réponse : B
+
+Quel pionnier de l’apprentissage profond est crédité de l'invention des réseaux convolutifs ?
+
+A) Geoffrey Hinton
+B) Yann LeCun
+C) Andrew Ng
+D) Yoshua Bengio
+Réponse : B
+
+Pourquoi l'apprentissage par transfert est-il souvent utilisé avec les CNN ?
+
+A) Pour entraîner un modèle avec peu de données
+B) Pour réduire la complexité du modèle
+C) Pour ne former que les couches de sortie
+D) Pour initialiser le réseau sans couches de convolution
+Réponse : A
+
+Quel est le but d'un noyau de convolution dans un CNN ?
+
+A) Éliminer les informations inutiles
+B) Extraire des caractéristiques spécifiques des données d'entrée
+C) Appliquer un filtre de bruit
+D) Normaliser les données
+Réponse : B
+
+Dans un CNN, pourquoi les neurones de la couche convolutive ne sont-ils pas tous connectés ?
+
+A) Pour réduire le nombre de paramètres
+B) Pour optimiser la vitesse de calcul
+C) Pour isoler chaque neurone
+D) Pour éviter le surapprentissage
+Réponse : A
+
+Quel est l'effet de l'utilisation d'un stride plus grand dans un CNN ?
+
+A) Augmentation de la résolution de l'image de sortie
+B) Réduction de la dimension de sortie
+C) Diminution du nombre de couches
+D) Amélioration de la précision
+Réponse : B
+
+Dans les CNN, que permet la couche de pooling ?
+
+A) Une augmentation de la résolution
+B) Une réduction de la variance dans les caractéristiques
+C) Une expansion des données
+D) Une duplication des informations de l'image
+Réponse : B
+
+Quelle est la différence principale entre les réseaux de neurones convolutifs et les réseaux de neurones récurrents ?
+
+A) Les CNN traitent les données séquentielles
+B) Les RNN sont utilisés pour les images
+C) Les CNN analysent les images et les RNN les séquences temporelles
+D) Les RNN nécessitent moins de données
+Réponse : C
+
+Un perceptron multicouche (MLP) peut modéliser des fonctions complexes, mais nécessite beaucoup de neurones. Pourquoi ?
+
+A) Car il manque de couches convolutionnelles
+B) Car il ne détecte pas les motifs comme les CNN
+C) Car il est limité aux fonctions linéaires
+D) Car il est moins optimisé pour l’analyse spatiale
+Réponse : B
+
+Que se passe-t-il lorsque l'on augmente trop le nombre de couches dans un réseau neuronal profond ?
+
+A) Il apprend mieux les données d'entraînement
+B) Il risque de surapprendre et de ne pas généraliser
+C) Il devient plus rapide à l'inférence
+D) Il devient moins sensible aux caractéristiques fines
+Réponse : B
+
+Quel est le rôle principal de la couche fully connected (complètement connectée) dans un CNN ?
+
+A) Réduire la dimensionnalité de l'image
+B) Combiner les caractéristiques extraites pour la classification finale
+C) Extraire les caractéristiques des pixels
+D) Simplifier le calcul
+Réponse : B
+
+Pourquoi le pooling est-il une opération essentielle dans les CNN ?
+
+A) Il réduit le nombre de paramètres et prévient le surapprentissage
+B) Il augmente la complexité du réseau
+C) Il normalise les caractéristiques
+D) Il amplifie les informations importantes
+Réponse : A
+
+Dans une opération de convolution, le produit scalaire est appliqué entre :
+
+A) Le noyau et chaque pixel de l'image
+B) Le noyau et les pixels adjacents dans un champ récepteur
+C) La sortie de la couche précédente et un vecteur aléatoire
+D) Les valeurs normalisées de l'image
+Réponse : B
+
+Un réseau avec trop de paramètres risque :
+
+A) D'avoir une meilleure généralisation
+B) De surapprendre sur les données d'entraînement
+C) D'être plus rapide à l'entraînement
+D) D'éviter le problème de gradient
+Réponse : B
+
+Dans le cadre des CNN, les motifs détectés dans les couches profondes sont :
+
+A) Les mêmes que ceux des premières couches
+B) Plus abstraits et complexes que dans les premières couches
+C) Spécifiques aux premières caractéristiques visuelles
+D) Ignorés pour éviter le surapprentissage
+Réponse : B
+
+####################################################################################3
+
+Cours 13
+
+Quel est le rôle principal des algorithmes de recherche en intelligence artificielle ?
+
+A) Générer des images
+B) Explorer des espaces d'états pour atteindre des objectifs
+C) Améliorer les performances matérielles
+D) Évaluer des modèles statistiques
+Réponse : B​
+
+Qu'est-ce qu'un agent en intelligence artificielle ?
+
+A) Une entité biologique qui agit sur l'environnement
+B) Une entité autonome qui perçoit son environnement et agit pour atteindre des objectifs
+C) Un programme qui génère des données
+D) Un modèle mathématique
+Réponse : B​
+
+Quel est l'objectif principal d'un agent rationnel ?
+
+A) Réduire le coût de calcul
+B) Atteindre le "meilleur" résultat possible
+C) Minimiser le nombre d'actions
+D) Rester inactif pour économiser des ressources
+Réponse : B​
+
+Dans un environnement totalement observable, un agent :
+
+A) Ne dispose d'aucune information sur l'environnement
+B) A accès à toutes les informations pertinentes pour la prise de décision
+C) Ne peut voir qu'une partie des informations disponibles
+D) Est incapable de planifier ses actions
+Réponse : B
+
+Qu'est-ce qu'un état dans un espace d'états ?
+
+A) Une action que l'agent doit éviter
+B) Une configuration de l'environnement à un moment donné
+C) Une liste de toutes les actions disponibles
+D) La position finale de l'agent
+Réponse : B​
+
+L'algorithme BFS (Breadth-First Search) explore l'arbre de recherche en :
+
+A) Se concentrant uniquement sur le nœud le plus profond
+B) Explorant les nœuds à chaque niveau avant de passer au suivant
+C) Ignorant les nœuds déjà explorés
+D) Sélectionnant les nœuds au hasard
+Réponse : B​
+
+Dans le 8-Puzzle, l'action de "glisser à gauche" implique :
+
+A) De déplacer le bord gauche de la grille
+B) De déplacer la tuile vide vers la gauche si possible
+C) D'inverser les chiffres
+D) De mélanger toutes les tuiles
+Réponse : B​
+
+Quel est le but de la fonction de coût dans un modèle de recherche ?
+
+A) Mesurer le temps de calcul de l'algorithme
+B) Spécifier le coût de chaque action pour atteindre un état objectif
+C) Ignorer les états non pertinents
+D) Calculer le nombre de nœuds atteints
+Réponse : B​
+
+Un environnement "statique" signifie que :
+
+A) Les actions de l'agent n'affectent pas l'état futur
+B) Les conditions de l'environnement restent constantes
+C) L'agent est limité à un nombre d'actions fixe
+D) L'environnement change constamment
+Réponse : B
+
+Dans le contexte de la recherche en IA, qu'est-ce qu'un "chemin" ?
+
+A) Une suite d'étapes reliant l'état initial à l'état objectif
+B) Un ensemble de nœuds non connectés
+C) Un seul nœud de départ
+D) Une action que l'agent doit éviter
+Réponse : A​
+
+Quel type de recherche utilise des heuristiques pour guider l'agent ?
+
+A) Recherche non informée
+B) Recherche en profondeur
+C) Recherche heuristique
+D) Recherche aléatoire
+Réponse : C​
+
+Qu'est-ce que l'élagage alpha-bêta dans les jeux adversariaux ?
+
+A) Un moyen de couper des branches inutiles de l'arbre de recherche
+B) Une technique pour augmenter la taille de l'arbre de recherche
+C) Une méthode pour calculer toutes les possibilités
+D) Une technique pour revenir en arrière sur l'arbre
+Réponse : A​
+
+Dans un environnement "discret", les états :
+
+A) Sont continus et infinis
+B) Ont un nombre fini et définissable
+C) Changent constamment
+D) Sont impossibles à prédire
+Réponse : B​
+
+L'objectif de l'algorithme Minimax est de :
+
+A) Maximiser le nombre de nœuds explorés
+B) Trouver le coup optimal dans un jeu adversarial
+C) Minimiser le temps de calcul
+D) Éviter tous les coups possibles
+Réponse : B
+
+Un "cycle" dans un chemin indique que l'agent :
+
+A) Ne progresse pas vers l'état objectif
+B) Est proche de la solution optimale
+C) A trouvé la solution finale
+D) A atteint un état sans retour
+Réponse : A​
+
+Le Deep Blue d'IBM a été conçu pour :
+
+A) Battre les champions d'échecs avec la recherche par force brute
+B) Maîtriser plusieurs jeux de stratégie
+C) Effectuer des calculs financiers
+D) Tester les environnements aléatoires
+Réponse : A​
+
+Le MCTS (Monte-Carlo Tree Search) est souvent utilisé pour :
+
+A) La recherche non informée
+B) La planification dans les jeux de stratégie en temps réel
+C) Le calcul de coûts
+D) La réduction de données
+Réponse : B​
+
+Les algorithmes génétiques sont une méthode de :
+
+A) Recherche informée uniquement
+B) Optimisation stochastique pour des espaces de grande taille
+C) Réduction de dimensions
+D) Classifications des actions
+Réponse : B
+
+L'espace d'états dans un problème de recherche est souvent représenté par :
+
+A) Un arbre de recherche
+B) Un graphe de réseaux sociaux
+C) Une base de données relationnelle
+D) Une image bitmap
+Réponse : A​
+
+La recherche en profondeur (DFS) explore en :
+
+A) Niveau par niveau
+B) Se focalisant sur les nœuds les plus profonds en premier
+C) Explorant les nœuds au hasard
+D) Utilisant des heuristiques pour optimiser
+Réponse : B​
+
+####################################################################################3
+
+Cours 14
+
+Qu'est-ce qu'une fonction heuristique dans un algorithme de recherche informée ?
+
+A) Une estimation du coût pour atteindre l'objectif depuis l'état actuel
+B) Une mesure de la profondeur d'un arbre de recherche
+C) Une manière de réduire le nombre d'états dans un espace d'états
+D) Un indicateur de la vitesse d'un algorithme
+Réponse : A
+
+Quel est le principal objectif de l'algorithme A ?*
+
+A) Explorer tous les nœuds de l'espace d'états
+B) Trouver le chemin optimal en utilisant une fonction heuristique admissible
+C) Minimiser l'utilisation de la mémoire
+D) Maximiser la profondeur d'exploration
+Réponse : B
+
+Dans un arbre de recherche, qu'est-ce que la "frontière" ?
+
+A) La limite entre les nœuds visités et non visités
+B) Les nœuds terminaux
+C) L'ensemble des nœuds avec la valeur de coût la plus élevée
+D) La racine de l'arbre
+Réponse : A
+
+Quel est le rôle d'une file de priorité dans la recherche heuristique ?
+
+A) Réduire la profondeur de l'arbre de recherche
+B) Gérer les nœuds à explorer en fonction de leur coût estimé
+C) Ignorer les nœuds ayant des coûts élevés
+D) Accélérer l'exploration en largeur
+Réponse : B
+
+Quel est le concept d'admissibilité pour une fonction heuristique ?
+
+A) Elle surestime toujours le coût pour atteindre l'objectif
+B) Elle ne surestime jamais le coût pour atteindre l'objectif
+C) Elle minimise la profondeur de l'arbre
+D) Elle est uniquement utilisée pour les graphes
+Réponse : B
+
+Quelle distance utilise l'heuristique de Manhattan dans le 8-Puzzle ?
+
+A) La distance totale parcourue entre tous les nœuds
+B) La somme des distances de chaque tuile à sa position cible en ligne droite
+C) La différence entre les valeurs des tuiles
+D) La distance entre la tuile vide et l'objectif
+Réponse : B
+
+La recherche en largeur (BFS) est-elle une recherche informée ?
+
+A) Oui, car elle utilise une fonction heuristique
+B) Non, car elle explore systématiquement tous les niveaux
+C) Oui, car elle trouve toujours le chemin le plus rapide
+D) Non, car elle ignore les nœuds terminaux
+Réponse : B
+
+Quel est l'avantage principal de la recherche en profondeur (DFS) ?
+
+A) Elle utilise moins de mémoire
+B) Elle est plus rapide que BFS dans tous les cas
+C) Elle est optimale pour tous les types de problèmes
+D) Elle trouve toujours la solution la plus courte
+Réponse : A
+
+Pourquoi la recherche A est-elle considérée comme efficace ?*
+
+A) Elle explore tous les nœuds possibles
+B) Elle utilise à la fois les coûts accumulés et estimés pour trouver l'objectif
+C) Elle ignore les nœuds non optimaux
+D) Elle réduit toujours le nombre d'états à explorer
+Réponse : B
+
+Quelle condition doit remplir une fonction heuristique pour garantir une solution optimale avec A ?*
+
+A) Être monotone
+B) Ne jamais sous-estimer le coût
+C) Être admissible et ne jamais surestimer le coût
+D) N'avoir aucun coût supplémentaire
+Réponse : C
+
+Qu'est-ce que la distance des tuiles mal placées dans le 8-Puzzle ?
+
+A) Le nombre total de mouvements requis pour chaque tuile
+B) La somme des distances de chaque tuile à sa position finale
+C) Le nombre de tuiles qui ne sont pas à leur position cible
+D) La distance entre la première et la dernière tuile
+Réponse : C
+
+La recherche du meilleur d'abord (Best-First Search) utilise quelle mesure pour explorer les nœuds ?
+
+A) Le coût accumulé
+B) Le coût total estimé pour atteindre l'objectif
+C) La profondeur de l'arbre
+D) Le nombre de voisins de chaque nœud
+Réponse : B
+
+Comment la recherche en largeur garantit-elle l'optimalité de la solution ?
+
+A) En explorant chaque nœud en fonction de sa profondeur
+B) En utilisant une fonction heuristique puissante
+C) En priorisant les nœuds avec le coût estimé le plus faible
+D) En évitant les cycles
+Réponse : A
+
+L'algorithme de recherche en profondeur explore les nœuds en :
+
+A) Niveau par niveau
+B) Se concentrant sur les nœuds les plus profonds en premier
+C) En utilisant une priorité fixe
+D) En ignorant les états déjà visités
+Réponse : B
+
+Pourquoi la fonction heuristique de Manhattan est-elle souvent plus précise que celle des tuiles mal placées ?
+
+A) Elle prend en compte la distance réelle à parcourir pour chaque tuile
+B) Elle sous-estime toujours le coût
+C) Elle utilise une estimation probabiliste
+D) Elle ignore les coûts de transition
+Réponse : A
+
+Une fonction heuristique est-elle toujours exacte dans la recherche informée ?
+
+A) Oui, elle indique toujours le coût réel
+B) Non, elle fournit une estimation, pas une garantie
+C) Oui, pour tous les algorithmes
+D) Non, elle est ignorée dans certains cas
+Réponse : B
+
+Qu'est-ce qu'un nœud "développé" dans une recherche en arbre ?
+
+A) Un nœud déjà exploré et ayant tous ses voisins analysés
+B) Un nœud sur la frontière de l'arbre
+C) Un nœud sans voisins
+D) Un nœud non évalué
+Réponse : A
+
+Comment fonctionne l'élagage alpha-bêta dans un arbre de recherche ?
+
+A) En ignorant les branches inutiles qui ne peuvent pas influencer la décision finale
+B) En explorant tous les nœuds en priorité
+C) En optimisant les nœuds de même profondeur
+D) En minimisant le coût pour chaque nœud
+Réponse : A
+
+Qu'est-ce qu'une solution "optimale" dans un problème de recherche ?
+
+A) Une solution avec le nombre minimal de nœuds développés
+B) Une solution qui minimise le coût du chemin pour atteindre l'objectif
+C) Une solution atteinte avec un nombre maximal de nœuds développés
+D) Une solution où tous les nœuds sont évalués
+Réponse : B
+
+Dans le contexte de la recherche informée, une fonction heuristique est dite "consistante" si :
+
+A) Elle ne surestime jamais le coût
+B) Le coût estimé respecte l'inégalité triangulaire entre les nœuds
+C) Elle garantit toujours l'optimalité de la solution
+D) Elle réduit la complexité spatiale
+Réponse : B
+
+####################################################################################3
+
+Cours 15
+
+Qu'est-ce qu'un algorithme de recherche locale ?
+
+A) Un algorithme qui explore l'ensemble de l'espace d'états
+B) Un algorithme qui ne considère que les états voisins de l'état actuel
+C) Un algorithme basé sur des modèles probabilistes
+D) Un algorithme qui utilise des arbres de décision
+Réponse : B​
+
+Quel est l'objectif principal de l'algorithme de montée de colline (hill climbing) ?
+
+A) Trouver le maximum global en parcourant tout l'espace d'états
+B) Trouver le maximum local en se déplaçant vers des états voisins plus élevés
+C) Minimiser le nombre de calculs nécessaires
+D) Explorer toutes les combinaisons possibles
+Réponse : B
+
+Quelle est la principale limitation de la montée de colline ?
+
+A) Elle utilise trop de mémoire
+B) Elle risque de rester coincée dans un maximum local
+C) Elle est lente à converger
+D) Elle exige une exploration exhaustive
+Réponse : B​
+
+Dans quel type de problème l'algorithme de montée de colline est-il souvent appliqué ?
+
+A) Les problèmes de classification
+B) Les problèmes d'optimisation avec des maxima locaux
+C) Les problèmes de réseau de neurones
+D) Les systèmes de recommandation
+Réponse : B
+
+Quel concept le recuit simulé utilise-t-il pour éviter les optima locaux ?
+
+A) La sélection par mutation
+B) Une température qui diminue progressivement
+C) Un algorithme génétique
+D) La recherche en largeur
+Réponse : B​
+
+Quel est l'impact de la température dans le recuit simulé ?
+
+A) Elle contrôle la probabilité d'acceptation des états de coût supérieur
+B) Elle détermine la durée d'exécution de l'algorithme
+C) Elle n'a pas d'effet direct sur l'algorithme
+D) Elle réduit le nombre de voisins explorés
+Réponse : A​
+
+Dans le recuit simulé, quand la température est élevée, la probabilité d'acceptation d'un état moins optimal est :
+
+A) Nulle
+B) Faible
+C) Moyenne
+D) Élevée
+Réponse : D​
+
+Quel est l'objectif du problème des 8-Reines ?
+
+A) Placer huit reines sur un échiquier sans qu'elles ne se menacent
+B) Trouver le chemin le plus court sur un échiquier
+C) Classer les reines par ordre de taille
+D) Trouver toutes les reines d'une même couleur
+Réponse : A​
+
+Quelle technique est utilisée pour représenter les états dans des problèmes comme les 8-Reines ?
+
+A) L'utilisation de chaînes de Markov
+B) Une représentation par coordonnées
+C) L'approche par liste d'adjacence
+D) La représentation par arbres binaires
+Réponse : B​
+
+Quel type d'optimisation le recuit simulé est-il capable de résoudre efficacement ?
+
+A) Les problèmes d'optimisation linéaire uniquement
+B) Les problèmes avec de nombreux optima locaux
+C) Les problèmes sans solution unique
+D) Les problèmes avec des solutions exactes
+Réponse : B​
+
+Dans un algorithme de recherche locale, pourquoi l'optimisation de la mémoire est-elle importante ?
+
+A) Pour accélérer l'algorithme
+B) Pour permettre de traiter de grands espaces d'états
+C) Pour réduire les coûts de calcul
+D) Pour optimiser les résultats finaux
+Réponse : B​
+
+Quelle méthode de recherche est utilisée dans le problème du voyageur de commerce ?
+
+A) La recherche en profondeur
+B) La montée de colline
+C) Le recuit simulé
+D) La rétropropagation
+Réponse : C
+
+L'influence de la différence d'énergie sur la probabilité d'acceptation dans le recuit simulé est-elle :
+
+A) Négligeable
+B) Inversement proportionnelle
+C) Proportionnelle
+D) Constante
+Réponse : B​
+
+Dans le recuit simulé, que se passe-t-il quand la température est proche de zéro ?
+
+A) Le système accepte presque tous les états
+B) Le système n'accepte plus que les améliorations
+C) Le système explore tous les états voisins
+D) Le système ne fait plus de transition
+Réponse : B​
+
+Quel type d'algorithme est un algorithme de recherche locale ?
+
+A) Un algorithme exact
+B) Un algorithme probabiliste
+C) Un algorithme déterministe
+D) Un algorithme exhaustif
+Réponse : B​
+
+Pourquoi la méthode de montée de colline est-elle souvent insuffisante seule ?
+
+A) Elle prend trop de temps à converger
+B) Elle ne trouve pas de solutions dans les grands espaces
+C) Elle est susceptible de rester bloquée dans des maxima locaux
+D) Elle exige trop de ressources de calcul
+Réponse : C
+
+Quel est un exemple de problème d'optimisation résolu par la recherche locale ?
+
+A) Le tri de nombres
+B) Le problème des 8-Reines
+C) La multiplication matricielle
+D) La prédiction d'images
+Réponse : B
+
+Quel est l'avantage du recuit simulé sur la montée de colline ?
+
+A) Il converge plus rapidement
+B) Il peut échapper aux maxima locaux
+C) Il est plus simple à implémenter
+D) Il utilise moins de mémoire
+Réponse : B​
+
+Dans la montée de colline, un "plateau" signifie que :
+
+A) L'état actuel est un maximum global
+B) L'algorithme atteint un état où aucun état voisin n'est meilleur
+C) L'algorithme a trouvé la solution finale
+D) L'algorithme manque d'états voisins
+Réponse : B​
+
+Quel algorithme utilise une probabilité d'acceptation dépendant de l'état énergétique pour les déplacements ?
+
+A) L'algorithme de recherche en profondeur
+B) La recherche en largeur
+C) Le recuit simulé
+D) L'élagage alpha-bêta
+Réponse : C​
+
+
+
+####################################################################################3
+
+Cours 16
+
+Qu'est-ce qu'une métaheuristique ?
+
+A) Un algorithme exact de résolution
+B) Une procédure de haut niveau pour guider la recherche de solutions optimales
+C) Un modèle de données
+D) Un langage de programmation
+Réponse : B​
+
+Quel est le rôle principal d'une métaheuristique dans les problèmes d'optimisation ?
+
+A) Explorer tout l'espace de recherche
+B) Trouver de bonnes solutions plus efficacement que les méthodes traditionnelles
+C) Rechercher la solution exacte uniquement
+D) Éviter complètement l'exploration aléatoire
+Réponse : B​
+
+Quel est l'objectif principal des algorithmes génétiques (AG) ?
+
+A) Générer des solutions aléatoires
+B) Faire évoluer une population de solutions pour atteindre une solution optimale
+C) Remplacer toutes les solutions initiales
+D) Résoudre uniquement des problèmes de physique
+Réponse : B​
+
+Quel principe biologique inspire les algorithmes génétiques ?
+
+A) La sélection naturelle
+B) La gravité
+C) La mécanique quantique
+D) La chimie organique
+Réponse : A​
+
+Quel processus n'est pas typiquement utilisé dans un algorithme génétique ?
+
+A) Sélection
+B) Mutation
+C) Croisement
+D) Élimination absolue des solutions
+Réponse : D​
+
+Dans le cadre des AG, qu'est-ce que le croisement ?
+
+A) Un processus de création de nouvelles solutions en combinant deux solutions existantes
+B) L'évaluation d'une solution
+C) La suppression d'une solution
+D) La mesure de l'efficacité d'une solution
+Réponse : A​
+
+Qu'est-ce qu'une fonction de fitness (ou aptitude) dans les AG ?
+
+A) Une mesure de la qualité d'une solution
+B) Un processus de sélection
+C) Une méthode de mutation
+D) Un type de croisement
+Réponse : A​
+
+Quelle est la fonction de la mutation dans un algorithme génétique ?
+
+A) Supprimer les solutions les plus faibles
+B) Introduire de la diversité dans la population
+C) Sélectionner les meilleures solutions
+D) Réinitialiser la population entière
+Réponse : B​
+
+Le problème du sac à dos est souvent utilisé pour illustrer :
+
+A) Les structures de données
+B) Les algorithmes de tri
+C) Les algorithmes de métaheuristique et d'optimisation
+D) La programmation en réseau
+Réponse : C
+
+Dans un AG, qu'est-ce que la sélection naturelle vise à faire ?
+
+A) Sélectionner les individus avec la pire aptitude
+B) Augmenter la population de façon exponentielle
+C) Favoriser les individus ayant une meilleure aptitude pour la reproduction
+D) Réduire la diversité génétique
+Réponse : C​
+
+Quelle est la différence entre exploitation et exploration dans une métaheuristique ?
+
+A) L'exploitation se concentre sur des solutions locales, tandis que l'exploration parcourt de nouvelles solutions dans l'espace de recherche
+B) Les deux font la même chose
+C) L'exploration est plus rapide que l'exploitation
+D) L'exploitation crée toujours des solutions nouvelles
+Réponse : A​
+
+Dans un AG, un chromosome représente :
+
+A) Une solution candidate
+B) Un processus de sélection
+C) Une étape de mutation
+D) Un critère de convergence
+Réponse : A​
+
+Qu'est-ce que le codage dans un algorithme génétique ?
+
+A) Le processus de traduction des solutions en une forme manipulable par l'algorithme
+B) L'élimination des solutions faibles
+C) L'évaluation de la fitness
+D) La sélection des meilleures solutions
+Réponse : A​
+
+Pourquoi les AG incluent-ils souvent un processus de sélection basé sur la fitness ?
+
+A) Pour assurer la survie des plus aptes dans la prochaine génération
+B) Pour réinitialiser les solutions existantes
+C) Pour diminuer la diversité
+D) Pour créer des solutions identiques
+Réponse : A​
+
+Qu'est-ce qu'un algorithme à population ?
+
+A) Un algorithme qui utilise une seule solution
+B) Un algorithme qui travaille avec un ensemble de solutions simultanément
+C) Un algorithme de tri
+D) Un modèle de réseau neuronal
+Réponse : B​
+
+Dans le problème du sac à dos, le but est de :
+
+A) Maximiser la capacité du sac
+B) Maximiser la valeur des objets sélectionnés sans dépasser la capacité
+C) Minimiser le nombre d'objets sélectionnés
+D) Minimiser le poids des objets sélectionnés
+Réponse : B​
+
+Les métaheuristiques à population se caractérisent par :
+
+A) Un seul point de départ dans la recherche
+B) L'utilisation d'une population de solutions explorées simultanément
+C) La recherche systématique de toutes les solutions
+D) L'utilisation d'un arbre de décision
+Réponse : B​
+
+Quelle est la fonction principale du croisement dans les AG ?
+
+A) Augmenter la diversité génétique en ajoutant des mutations
+B) Combiner des solutions pour en créer de nouvelles
+C) Supprimer les solutions faibles
+D) Réduire la taille de la population
+Réponse : B​
+
+Pourquoi les métaheuristiques sont-elles adaptées à des problèmes d'optimisation complexes ?
+
+A) Elles garantissent toujours la solution optimale
+B) Elles équilibrent entre exploration et exploitation pour éviter les optima locaux
+C) Elles nécessitent peu de calcul
+D) Elles n'utilisent pas de fonctions de fitness
+Réponse : B​
+
+Quel aspect des AG est inspiré par la biologie évolutive ?
+
+A) La reproduction aléatoire
+B) L'élimination de la diversité
+C) La sélection, le croisement, et la mutation des solutions
+D) La réplication des chromosomes sans modification
+Réponse : C​

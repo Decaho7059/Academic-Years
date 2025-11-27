@@ -1,0 +1,11 @@
+
+
+Le sous-domaine **Utilisateur** est responsable de la gestion des comptes d'utilisateur dans le système.
+Il prend en charge l'inscription, la connexion, et les actions liées à l'adhésion ou au départ d'un groupe.
+ Ce sous-domaine gère également les informations de profil des utilisateurs.
+
+
+- **Créer un compte**: Permet aux utilisateurs de s'inscrire au système en fournissant les informations nécessaires.
+- **Se connecter**: Authentifie un utilisateur existant afin qu'il puisse accéder aux fonctionnalités du système.
+- **Joindre un groupe**: Permet à un utilisateur de rejoindre un groupe existant.
+- **Quitter un groupe**: Permet à un utilisateur de quitter un groupe dans lequel il est membre.

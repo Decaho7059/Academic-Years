@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <openssl/evp.h>
+#include <string.h>
+#include <stdlib.h>
+
+// Fonction pour tronquer une valeur de hachage à 24 bits
+unsigned int truncate_to_24bits(const unsigned char* hash) {
+    // Utilisation des 3 premiers octets (24 bits) du hachage
+    return (hash[0] << 16) | (hash[1] << 8) | hash[2];
+}
+
+// Fonction pour générer une valeur de hachage de 24 bits avec OpenSSL
+unsigned int generate_hash(const char *input, size_t len) {
+    EVP_MD_CTX *mdctx;
+    const EVP_MD *md = EVP_sha256(); // Utilisation de SHA-256 pour l'exemple
+    unsigned char hash[EVP_MAX_MD_SIZE];
+    unsigned int hash_len;
+
+    mdctx = EVP_MD_CTX_new();
+    EVP_DigestInit_ex(mdctx, md, NULL);
+    EVP_DigestUpdate(mdctx, input, len);
+    EVP_DigestFinal_ex(mdctx, hash, &hash_len);
+    EVP_MD_CTX_free(mdctx);
+
+    return truncate_to_24bits(hash);
+}
+
+void break_one_way_property(const char *target_message) {
+    unsigned int target_hash = generate_hash(target_message, strlen(target_message));
+    char attempt[20];
+    unsigned int attempt_hash;
+    unsigned long trials = 0;
+
+    // Boucle jusqu'à ce que nous trouvions une collision
+    do {
+        snprintf(attempt, sizeof(attempt), "%lu", trials);  // Génère une chaîne unique
+        attempt_hash = generate_hash(attempt, strlen(attempt));
+        trials++;
+    } while (attempt_hash != target_hash);
+
+    printf("One-way property broken after %lu trials. Collision found with: %s\n", trials, attempt);
+}
+
+void break_collision_free_property() {
+    unsigned int hash1, hash2;
+    char attempt1[20], attempt2[20];
+    unsigned long trials = 0;
+
+    // Boucle jusqu'à ce que deux chaînes différentes génèrent le même hachage
+    do {
+        snprintf(attempt1, sizeof(attempt1), "%lu", trials);      // Chaîne 1
+        snprintf(attempt2, sizeof(attempt2), "%lu", trials + 1);  // Chaîne 2
+
+        hash1 = generate_hash(attempt1, strlen(attempt1));
+        hash2 = generate_hash(attempt2, strlen(attempt2));
+        trials++;
+    } while (hash1 != hash2);
+
+    printf("Collision-free property broken after %lu trials.\n", trials);
+    printf("Collision between: %s and %s\n", attempt1, attempt2);
+}
+
+int main() {
+    // Entrée cible pour la propriété one-way
+    const char *target_message = "test_message";
+
+    printf("Breaking one-way property...\n");
+    break_one_way_property(target_message);
+
+    printf("\nBreaking collision-free property...\n");
+    break_collision_free_property();
+
+    return 0;
+}

@@ -1,0 +1,74 @@
+import random
+
+def lire_questions(fichier):
+    with open(fichier, "r", encoding="utf-8") as f:
+        lignes = f.readlines()
+
+    questions = []
+    question = {}
+    for ligne in lignes:
+        ligne = ligne.strip()
+
+        if not ligne:
+            continue  # Ignore les lignes vides
+
+        # Si on rencontre la réponse correcte
+        if ligne.startswith("Réponse :"):
+            question["reponse"] = ligne.split("Réponse :")[1].strip()
+            if "texte" in question and "choix" in question:
+                questions.append(question)
+            question = {}
+
+        # Si on rencontre une nouvelle question
+        elif question == {}:
+            question = {"texte": ligne, "choix": []}
+
+        # Si on rencontre un choix de réponse
+        else:
+            question["choix"].append(ligne)
+
+    return questions
+
+def poser_questions(questions):
+    random.shuffle(questions)
+    score = 0
+    for question in questions:
+        print("\n" + question["texte"])
+
+        # Mélange les choix de réponses
+        choix = question["choix"]
+        random.shuffle(choix)
+
+        # Trouve l'indice de la bonne réponse après le mélange
+        reponse_correcte = None
+        for i, option in enumerate(choix, 1):
+            print(f"{i}) {option}")
+            if option == question["reponse"]:
+                reponse_correcte = i
+
+        # Vérification de la validité de la réponse correcte
+        if reponse_correcte is None:
+            print("Erreur : réponse correcte non trouvée dans les choix.")
+            continue
+
+        # Demande la réponse de l'utilisateur
+        reponse_utilisateur = input("Votre réponse (entrez le numéro du choix) : ")
+
+        try:
+            index_reponse = int(reponse_utilisateur)
+            if index_reponse == reponse_correcte:
+                print("Correct!")
+                score += 1
+            else:
+                print(f"Incorrect. La bonne réponse était : {reponse_correcte}) {choix[reponse_correcte - 1]}")
+        except (ValueError, IndexError):
+            print("Réponse invalide.")
+
+    print(f"\nVotre score final est : {score}/{len(questions)}")
+
+def main():
+    questions = lire_questions("test.txt")
+    poser_questions(questions)
+
+if __name__ == "__main__":
+    main()

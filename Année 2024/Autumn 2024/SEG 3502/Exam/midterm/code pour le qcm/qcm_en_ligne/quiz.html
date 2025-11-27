@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>QCM en ligne</title>
+</head>
+<body>
+<h1>Bienvenue au QCM en ligne!</h1>
+<form method="POST">
+    {% for question in questions %}
+    <fieldset>
+        <legend>{{ question["texte"] }}</legend>
+        {% for choix in question["choix"] %}
+        <label>
+            <input type="radio" name="reponse" value="{{ choix }}"> {{ choix }}
+        </label><br>
+        {% endfor %}
+    </fieldset>
+    {% endfor %}
+    <button type="submit">Soumettre</button>
+</form>
+</body>
+</html>

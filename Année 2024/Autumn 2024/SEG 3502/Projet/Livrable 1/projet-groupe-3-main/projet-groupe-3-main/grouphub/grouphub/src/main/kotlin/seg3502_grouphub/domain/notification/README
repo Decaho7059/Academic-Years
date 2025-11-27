@@ -1,0 +1,11 @@
+
+
+Le sous-domaine **Notification** est responsable de la gestion des notifications au sein du système.
+Il envoie des messages aux utilisateurs pour les informer des actions importantes, comme l'ajout ou
+la suppression d'un membre d'un groupe. Il garantit que les utilisateurs sont tenus au courant des
+changements dans les groupes auxquels ils appartiennent.
+
+
+- **Envoyer une notification**: Envoie des notifications aux utilisateurs pour les informer des mises
+à jour concernant les équipes ou les membres.
+

@@ -1,0 +1,71 @@
+Policy 1 : Department-Based Access:
+
+IF user.department == "HR" AND document.sensitivity == "Internal" THEN
+    GRANT access
+ELSE
+    DENY access
+
+Policy 2 : Time-Limited Access:
+
+IF user.role == "Manager" AND document.sensitivity == "Confidential" AND current_time BETWEEN "08:00" AND "16:00" THEN
+    GRANT access
+ELSE
+    DENY access
+
+Policy 3: High-Sensitivity Access Control:
+
+IF user.clearance == "Top Secret" AND document.sensitivity == "Top Secret" AND user.connection_type == "Secure VPN" THEN
+    GRANT access
+ELSE
+    DENY access
+
+Policy 4 : File Owner Edit Rights:
+
+IF user.id == document.owner_id THEN
+    GRANT edit_permission
+ELSE
+    DENY edit_permission
+
+Policy 5 : Location-Based Access:
+
+IF user.location == "Organization Premises" OR user.ip_address IN organization.ip_range AND document.sensitivity == "Sensitive" THEN
+    GRANT access
+ELSE
+    DENY access
+
+Policy 6 : Device-Specific Access:
+
+IF user.device IN organization.registered_devices AND document.sensitivity == "Confidential" THEN
+    GRANT access
+ELSE
+    DENY access
+
+Policy 7 : Multi-factor authentication for critical files:
+
+IF user.authentication_level == "Multi-factor" AND document.sensitivity == "Highly Confidential" THEN
+    GRANT access
+ELSE
+    DENY access
+
+Policy 8 : Temporary access for contractors:
+
+IF user.role == "Contractor" AND document.visibility IN ["Public", "Shared"] AND current_date <= user.access_expiry_date THEN
+    GRANT access
+ELSE
+    DENY access
+
+Policy 9 : Document version control:
+
+IF user.role == "Team Leader" THEN
+    GRANT edit_permission
+ELSE IF user.role == "Regular User" THEN
+    GRANT view_or_comment_permission
+ELSE
+    DENY edit_permission
+
+Policy 10 : Approval-based access:
+
+IF document.sensitivity == "Restricted" AND user.request_approved == TRUE THEN
+    GRANT access
+ELSE
+    DENY access
