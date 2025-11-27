@@ -1,0 +1,9 @@
+﻿  Card.cpp
+  CardFactory.cpp
+  Chain.cpp
+C:\Users\Decaho\Downloads\Projet jeu de carte (2)\Projet jeu de carte\Projet jeu de carte\Projet_CSI_2772_Automne_2023\Chain.cpp(13,22): warning C4267: 'return' : conversion de 'size_t' en 'int', perte possible de données
+  Deck.cpp
+  Player.cpp
+  Table.cpp
+  Génération de code en cours...
+  Projet_CSI_2772_Automne_2023.vcxproj -> C:\Users\Decaho\Downloads\Projet jeu de carte (2)\Projet jeu de carte\Projet jeu de carte\Projet_CSI_2772_Automne_2023\x64\Debug\Projet_CSI_2772_Automne_2023.exe
