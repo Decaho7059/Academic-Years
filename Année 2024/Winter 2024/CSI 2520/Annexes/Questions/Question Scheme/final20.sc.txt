@@ -1,0 +1,20 @@
+(define names '("marie" "jean" "claude" "emma" "sam" "tom" "eve" "bob"))
+(define (insertAt element lst pos) 
+        (cond ((null? lst) (list element))
+              ((= pos 0) (cons element lst))
+              (else (cons (car lst)
+                         (insertAt element (cdr lst) (- pos 1))))))
+(define (shuffle lst n)
+   (if (= n 0) lst
+       (shuffle (insertAt (car lst)
+                         (cdr lst)
+                         (random (- (length lst) 1))) (- n 1))))
+
+(define (first n lst)
+  (cond ((null? lst) lst)
+        ((= n 0) '())
+        ((= n 1) (list (car lst)))
+        (else (cons (car lst) (first (- n 1) (cdr lst))))))
+
+(define (winner lst n)
+    (first n (shuffle names 20)))
