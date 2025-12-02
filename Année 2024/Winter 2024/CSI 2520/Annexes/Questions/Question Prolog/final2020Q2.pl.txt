@@ -1,0 +1,7 @@
+weekends(mars,2020, [-4,-1, 6, 4,-2,-4, 0, 7, 8], [-1, 0, 0, 2, 2, 4, 4, 6 ,6]).
+difference([],[],[]).
+difference([H1|T1],[H2|T2],[R|T]):-difference(T1,T2,T),R is H1-H2.
+positive([],0).
+positive([H|T],N):- H >= 0, positive(T,NN), N is NN+1.
+positive([H|T],N):- H < 0, positive(T,N).
+niceMonth(M,Y):-weekends(M,Y,T,A),difference(T,A,F),positive(F,N), N2 is N*2, length(F,L),N2 >=L. 
